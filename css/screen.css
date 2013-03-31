@@ -1,0 +1,26 @@
+*{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+#in-work, #home, .footer, .title, #related, #post{
+  width: 700px;
+  position: relative;
+  left: 50%;
+  margin-left: -350px;
+}
+
+.hr{
+  margin: 10px 0px;
+  border-bottom: 1px dashed #aaa;
+  font-size: 1px;
+}
+
+.title{
+  text-align: right;
+}
+
+#post img{
+  max-width: 700px;
+}
+h1, h2, h3, h4, h5, .footer, .title{
+  font-weight: normal;
+}
