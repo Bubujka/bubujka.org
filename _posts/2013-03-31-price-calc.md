@@ -4,4 +4,4 @@ layout: post
 tags: ['Дизайн']
 ---
 
-![Форма заказа на studentochka.ru](/images/studentochka-price_calc.png)
+![Калькулятор цены на studentochka.ru](/images/studentochka-price_calc.png)
