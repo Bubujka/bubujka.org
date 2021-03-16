@@ -2,12 +2,13 @@
   font-family: 'PT Sans Narrow', sans-serif;
 }
 #in-work, #home, .footer, .title, #related, #post{
-  width: 700px;
   position: relative;
-  left: 50%;
-  margin-left: -350px;
 }
-
+.site{
+  max-width: 700px;
+  position:relative;
+  margin: 0 auto;
+}
 .hr{
   margin: 10px 0px;
   border-bottom: 1px dashed #aaa;
@@ -19,7 +20,8 @@
 }
 
 #post img{
-  max-width: 700px;
+  max-width: 100%;
+  height: auto;
 }
 h1, h2, h3, h4, h5, .footer, .title{
   font-weight: normal;

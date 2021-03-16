@@ -2,23 +2,16 @@
 layout: default
 title: Алексей Камынин
 ---
-<div id="in-work">
-  <div class='hr'></div>
-  <h1>
-    Сейчас я работаю над
-    <a href='http://studentochka.ru'>http://studentochka.ru</a>.
-  </h1>
-  <div class='hr'></div>
-  <h1>Проекты в которых я участвую:</h1>
-  <ul>
-    <li><a href='http://spitz.su'>http://spitz.su</a></li>
-    <li><a href='http://ru.najomi.org'>http://ru.najomi.org</a></li>
-  </ul>
-  <div class='hr'></div>
-</div>
 <div id="home">
   <h1>Записи</h1>
   {% for post in site.posts %}
     <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
+  {% endfor %}
+
+  <hr>
+
+  <h1>Сниппеты</h1>
+  {% for s in site.s %}
+    <a href="{{ s.url }}">{{ s.title }}</a><br>
   {% endfor %}
 </div>

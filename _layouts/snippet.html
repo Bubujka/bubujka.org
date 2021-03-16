@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<style>
+pre.highlight{
+  padding: 10px 20px;
+  background: #FEFBF3;
+  border: 1px solid rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  border-radius: 3px;
+  overflow-x: scroll;
+
+}
+</style>
+<script>
+const copyToClipboard = function(){
+  const el = document.createElement('textarea');
+  el.value = document.querySelector("code").textContent;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+  document.querySelector('#notify').innerHTML = 'Скопировано';
+  setTimeout(function(){
+    document.querySelector('#notify').innerHTML = '';
+  }, 2000);
+};
+</script>
+<div id="post">
+  <h1>{{ page.title }}</h1>
+  {% for tag in page.tags %}
+    {{tag}}
+  {% endfor %}
+  <div class='hr'></div>
+  {{ content }}
+  <br>
+  <br>
+  <button onclick="copyToClipboard()">Скопировать в буфер обмена</button>
+  <div id='notify'></div>
+</div>
