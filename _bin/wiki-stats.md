@@ -3,7 +3,7 @@ layout: bin
 name: wiki-stats
 ---
 
-```sh
+```
 #!/bin/bash
 cd ~/.db/wiki
 echo ".md:"

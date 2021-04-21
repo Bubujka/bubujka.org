@@ -3,7 +3,7 @@ layout: bin
 name: open-backlog
 ---
 
-```sh
+```
 #!/bin/bash
 rm ~/.db/wiki/.*swp
 gvim--remote-send ':sp /home/bubujka/.db/wiki/backlog.md<CR>'

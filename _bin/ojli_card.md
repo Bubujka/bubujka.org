@@ -3,7 +3,7 @@ layout: bin
 name: ojli_card
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 

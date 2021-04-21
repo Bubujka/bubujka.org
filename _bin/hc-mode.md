@@ -3,7 +3,7 @@ layout: bin
 name: hc-mode
 ---
 
-```sh
+```
 #!/bin/bash
 if ps -p "$(cat ~/.pid/hc-mode.pid )";
 then

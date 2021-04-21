@@ -3,7 +3,7 @@ layout: bin
 name: create-site
 ---
 
-```sh
+```
 #!/bin/bash
 # создаём из ветки репа сайт...
 #

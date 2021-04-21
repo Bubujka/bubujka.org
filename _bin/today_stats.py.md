@@ -3,7 +3,7 @@ layout: bin
 name: today_stats.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Получить статистику за сегодня"""
 

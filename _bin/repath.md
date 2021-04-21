@@ -3,7 +3,7 @@ layout: bin
 name: repath
 ---
 
-```sh
+```
 #!/bin/bash
 > ~/.bin_path
 

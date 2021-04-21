@@ -3,7 +3,7 @@ layout: bin
 name: passmenu
 ---
 
-```sh
+```
 #!/usr/bin/env bash
 
 shopt -s nullglob globstar

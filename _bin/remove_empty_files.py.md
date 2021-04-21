@@ -3,7 +3,7 @@ layout: bin
 name: remove_empty_files.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 """Удалить пустые файлы из каталога"""

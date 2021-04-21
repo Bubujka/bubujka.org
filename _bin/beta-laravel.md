@@ -3,7 +3,7 @@ layout: bin
 name: beta-laravel
 ---
 
-```sh
+```
 #!/bin/bash
 set -o errexit
 set -o xtrace

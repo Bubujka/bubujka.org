@@ -3,7 +3,7 @@ layout: bin
 name: readed
 ---
 
-```sh
+```
 #!/bin/bash
 
 DIRECTORY="$(dirname "$1")"

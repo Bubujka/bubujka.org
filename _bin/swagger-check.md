@@ -3,7 +3,7 @@ layout: bin
 name: swagger-check
 ---
 
-```sh
+```
 #!/bin/bash
 for file in $(find . -iname swagger.yaml); do
   echo "Checking $file"

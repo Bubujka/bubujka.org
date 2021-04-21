@@ -3,7 +3,7 @@ layout: bin
 name: sf
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 from subprocess import check_output

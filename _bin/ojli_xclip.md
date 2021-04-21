@@ -3,7 +3,7 @@ layout: bin
 name: ojli_xclip
 ---
 
-```sh
+```
 #!/bin/bash
 DATE=$(date +%s)
 xclip -o > ~/.ojli/$DATE

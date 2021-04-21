@@ -3,7 +3,7 @@ layout: bin
 name: vagrant-tpl
 ---
 
-```sh
+```
 #!/bin/bash -xe
 
 git clone https://github.com/bubujka/vagrant-tpl.git $1

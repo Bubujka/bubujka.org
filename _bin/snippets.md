@@ -3,7 +3,7 @@ layout: bin
 name: snippets
 ---
 
-```sh
+```
 #!/usr/bin/env php
 <?php
 function _prefix(){

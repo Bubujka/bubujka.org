@@ -3,7 +3,7 @@ layout: bin
 name: toggle-mic-recording
 ---
 
-```sh
+```
 #!/bin/bash
 if kill -0 $(cat ~/.pid/mic.pid)
 then

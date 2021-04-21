@@ -3,7 +3,7 @@ layout: bin
 name: initial-working-state
 ---
 
-```sh
+```
 #!/bin/bash
 
 killall -KILL st

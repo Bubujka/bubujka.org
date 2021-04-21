@@ -3,7 +3,7 @@ layout: bin
 name: select-bin-file
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 prefix = File.expand_path('~/.bu.bin/bin')
 files = Dir[prefix+'*']

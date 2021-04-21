@@ -3,7 +3,7 @@ layout: bin
 name: week-logbook
 ---
 
-```sh
+```
 #!/bin/bash
 FILE=$(mktemp --suffix=.md)
 cd ~/.db/wiki/logbook

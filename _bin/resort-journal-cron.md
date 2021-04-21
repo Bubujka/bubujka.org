@@ -3,7 +3,7 @@ layout: bin
 name: resort-journal-cron
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 cd ~/.db/wiki

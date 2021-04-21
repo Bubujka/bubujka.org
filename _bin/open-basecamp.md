@@ -3,7 +3,7 @@ layout: bin
 name: open-basecamp
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 

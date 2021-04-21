@@ -3,7 +3,7 @@ layout: bin
 name: swagger-ui
 ---
 
-```sh
+```
 #!/bin/bash
 CURRENT_DIR="$(pwd)"
 cd ~/.db/prj/swagger-ui

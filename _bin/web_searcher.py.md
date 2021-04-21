@@ -3,7 +3,7 @@ layout: bin
 name: web_searcher.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """
 Взаимодействие с поисковыми системами через dmenu.

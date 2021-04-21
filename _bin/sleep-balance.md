@@ -3,7 +3,7 @@ layout: bin
 name: sleep-balance
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 from csv import DictReader

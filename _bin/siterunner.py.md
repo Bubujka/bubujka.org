@@ -3,7 +3,7 @@ layout: bin
 name: siterunner.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """
 Запускалка сайтов через dmenu

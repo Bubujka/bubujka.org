@@ -3,7 +3,7 @@ layout: bin
 name: menuch
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 
 require "rubygems"

@@ -3,7 +3,7 @@ layout: bin
 name: new-prj
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bu-config
 

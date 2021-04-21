@@ -3,7 +3,7 @@ layout: bin
 name: lowercase-files
 ---
 
-```sh
+```
 #!/bin/bash
 for file in "$@";
 do

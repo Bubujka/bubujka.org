@@ -3,7 +3,7 @@ layout: bin
 name: select-trello-board
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 def dmenu_gets prefix, rows = 20
   `cat ~/.trello | grep -v '^$' | ~/.bu.bin/bin/dmenu-wrapper #{prefix} #{rows} `.chomp

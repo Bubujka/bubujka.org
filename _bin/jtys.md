@@ -3,7 +3,7 @@ layout: bin
 name: jtys
 ---
 
-```sh
+```
 #!/bin/bash
 # Превратить json с данными в YAML json-схему
 cat - | json-schema-generator  | tail -n +2 | json2yml

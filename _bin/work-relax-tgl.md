@@ -3,7 +3,7 @@ layout: bin
 name: work-relax-tgl
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 #tgl start "Тупление в инете"

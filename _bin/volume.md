@@ -3,7 +3,7 @@ layout: bin
 name: volume
 ---
 
-```sh
+```
 #!/bin/bash
 # Установить громкость в консоли
 amixer set Master $1

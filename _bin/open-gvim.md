@@ -3,7 +3,7 @@ layout: bin
 name: open-gvim
 ---
 
-```sh
+```
 #!/bin/bash
 killall -KILL gvim
 

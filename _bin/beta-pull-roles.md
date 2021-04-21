@@ -3,7 +3,7 @@ layout: bin
 name: beta-pull-roles
 ---
 
-```sh
+```
 #!/bin/bash
 cd ~/.db/beta/server.configs
 git pull

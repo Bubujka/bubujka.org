@@ -3,7 +3,7 @@ layout: bin
 name: diablo-2-plugy
 ---
 
-```sh
+```
 #!/bin/bash
 # Закоммитить сэйвы диаблы и запустить Plugy версию
 cd ~/.d2plugy/drive_c/Diablo2/save

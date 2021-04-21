@@ -3,7 +3,7 @@ layout: bin
 name: stop-toggle
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 killall -KILL -w notify-osd

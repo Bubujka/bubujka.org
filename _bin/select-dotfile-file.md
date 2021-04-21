@@ -3,7 +3,7 @@ layout: bin
 name: select-dotfile-file
 ---
 
-```sh
+```
 #!/bin/bash
 
 cd ~/.db/dotfiles

@@ -3,7 +3,7 @@ layout: bin
 name: backup-mysql
 ---
 
-```sh
+```
 #!/bin/bash
 set -o errexit
 set -o xtrace

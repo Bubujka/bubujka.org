@@ -3,7 +3,7 @@ layout: bin
 name: timi-task
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 

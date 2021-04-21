@@ -3,7 +3,7 @@ layout: bin
 name: undoc
 ---
 
-```sh
+```
 #!/bin/bash
 # Вырезать из php файла все комментарии
 TMPFILE=`mktemp`

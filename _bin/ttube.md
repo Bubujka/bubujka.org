@@ -3,7 +3,7 @@ layout: bin
 name: ttube
 ---
 
-```sh
+```
 #!/bin/bash
 if [ "$#" -eq 0 ]; then
       echo "Нужно задать название скринкасту"

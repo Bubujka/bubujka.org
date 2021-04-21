@@ -3,7 +3,7 @@ layout: bin
 name: reload-timi-status
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 killall -KILL show-timi-status

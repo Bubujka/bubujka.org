@@ -3,7 +3,7 @@ layout: bin
 name: flush-dns-cache
 ---
 
-```sh
+```
 #!/bin/bash
 # Сбросить кэш днс
 sudo killall -HUP dnsmasq

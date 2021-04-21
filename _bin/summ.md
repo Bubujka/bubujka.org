@@ -3,7 +3,7 @@ layout: bin
 name: summ
 ---
 
-```sh
+```
 #!/usr/bin/env php
 <?php # Просуммировать числа из потока ввода
 if($argc == 1){

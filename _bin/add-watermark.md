@@ -3,7 +3,7 @@ layout: bin
 name: add-watermark
 ---
 
-```sh
+```
 #!/bin/bash
 # Добавить надпись-watermark картинкам
 COPY="$1"

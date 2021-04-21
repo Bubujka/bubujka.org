@@ -3,7 +3,7 @@ layout: bin
 name: upgrade-nvm
 ---
 
-```sh
+```
 #!/bin/bash
 # Команда для обновления nvm
 

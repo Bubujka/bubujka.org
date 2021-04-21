@@ -3,7 +3,7 @@ layout: bin
 name: tt
 ---
 
-```sh
+```
 #!/bin/bash
 seconds=$1
 if [[ $1 =~ ^.*m$ ]]; then

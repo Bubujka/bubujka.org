@@ -3,7 +3,7 @@ layout: bin
 name: ie9video
 ---
 
-```sh
+```
 #!/bin/bash
 if [ "$#" -eq 0 ]; then
       echo "Нужно указать имя файла +_+"

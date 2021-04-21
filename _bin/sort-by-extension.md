@@ -3,7 +3,7 @@ layout: bin
 name: sort-by-extension
 ---
 
-```sh
+```
 #!/bin/bash
 for file in * ; do
   extension="${file##*.}"

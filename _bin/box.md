@@ -3,7 +3,7 @@ layout: bin
 name: box
 ---
 
-```sh
+```
 #!/bin/bash
 
 LIST=$(date +%F_%H-%M-%S.txt)

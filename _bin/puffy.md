@@ -3,7 +3,7 @@ layout: bin
 name: puffy
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 # Чтение и запись в бэйскамп
 # SoRrY fOr My RuBy

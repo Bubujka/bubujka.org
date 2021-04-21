@@ -3,7 +3,7 @@ layout: bin
 name: kill-web
 ---
 
-```sh
+```
 #!/bin/bash
 killall -KILL -w node
 killall -KILL -w php7.1

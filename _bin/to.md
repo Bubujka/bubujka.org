@@ -3,7 +3,7 @@ layout: bin
 name: to
 ---
 
-```sh
+```
 #!/bin/bash
 set -o errexit
 set -o pipefail

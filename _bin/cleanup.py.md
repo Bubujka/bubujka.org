@@ -3,7 +3,7 @@ layout: bin
 name: cleanup.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 """Глобальная чистка на компьютере"""

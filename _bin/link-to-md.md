@@ -3,7 +3,7 @@ layout: bin
 name: link-to-md
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Превратить stdin в markdown ссылки"""
 

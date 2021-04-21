@@ -3,7 +3,7 @@ layout: bin
 name: git-cc
 ---
 
-```sh
+```
 #!/bin/bash
 if [ "$#" -eq 0 ]; then
       echo "Illegal number of parameters"

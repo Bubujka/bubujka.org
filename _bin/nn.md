@@ -3,7 +3,7 @@ layout: bin
 name: nn
 ---
 
-```sh
+```
 #!/usr/bin/env php
 <?php # Получить номер следующего теста [Exxx]
 if($argc == 1){

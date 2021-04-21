@@ -3,7 +3,7 @@ layout: bin
 name: tap
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Добавить в task с указанием проекта"""
 import sys

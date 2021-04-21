@@ -3,7 +3,7 @@ layout: bin
 name: split-video
 ---
 
-```sh
+```
 #!/usr/bin/env php
 <?php
 if(count($argv) == 1){

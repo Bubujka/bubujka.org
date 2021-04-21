@@ -3,7 +3,7 @@ layout: bin
 name: st-sync
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 cd ~/.db/storage

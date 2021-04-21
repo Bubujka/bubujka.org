@@ -3,7 +3,7 @@ layout: bin
 name: mutt-open-chrome
 ---
 
-```sh
+```
 #!/usr/bin/env bash
 echo '<html><meta charset="utf8">' > "${1}_utf8.html"
 cat "$1" >> "${1}_utf8.html"

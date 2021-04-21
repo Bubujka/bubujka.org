@@ -3,7 +3,7 @@ layout: bin
 name: m-mail
 ---
 
-```sh
+```
 #!/bin/bash
 xterm -e " cd ~/.db/prj/betamails; nf start " &
 google-chrome \

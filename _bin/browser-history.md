@@ -3,7 +3,7 @@ layout: bin
 name: browser-history
 ---
 
-```sh
+```
 #!/bin/bash
 # Вывести историю просмотров в хроме
 sqlite3 ~/.config/google-chrome/Default/History  "select datetime(last_visit_time/1000000-11644473600,'unixepoch'),url from  urls order by last_visit_time desc"

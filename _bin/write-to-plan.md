@@ -3,7 +3,7 @@ layout: bin
 name: write-to-plan
 ---
 
-```sh
+```
 #!/bin/bash
 # Записать через dmenu в #unsorted у файла
 . ~/.bashrc

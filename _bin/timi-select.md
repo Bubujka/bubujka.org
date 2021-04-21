@@ -3,7 +3,7 @@ layout: bin
 name: timi-select
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 

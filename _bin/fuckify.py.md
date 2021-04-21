@@ -3,7 +3,7 @@ layout: bin
 name: fuckify.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 from sys import stdin, argv

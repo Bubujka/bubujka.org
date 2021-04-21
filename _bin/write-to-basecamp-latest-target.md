@@ -3,7 +3,7 @@ layout: bin
 name: write-to-basecamp-latest-target
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 AGE=$(($(date +%s) - $(stat -L --format %Y ~/.puffy-latest-target)))

@@ -3,7 +3,7 @@ layout: bin
 name: resort-journal
 ---
 
-```sh
+```
 #!/usr/bin/env php
 <?php
 $r = array();

@@ -3,7 +3,7 @@ layout: bin
 name: create-gallery
 ---
 
-```sh
+```
 #!/bin/bash
 # Создать галерею фоточек из папки
 source ~/.bashrc

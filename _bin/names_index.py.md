@@ -3,7 +3,7 @@ layout: bin
 name: names_index.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 """Печать списка названий из моей вики"""

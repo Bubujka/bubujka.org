@@ -3,7 +3,7 @@ layout: bin
 name: open-reps
 ---
 
-```sh
+```
 #!/bin/bash
 md-to-links ~/.db/prj/websites/my/stars.md > ~/.reps
 siterunner.py ~/.reps

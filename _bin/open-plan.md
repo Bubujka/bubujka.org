@@ -3,7 +3,7 @@ layout: bin
 name: open-plan
 ---
 
-```sh
+```
 #!/bin/bash
 rm ~/.db/wiki/.*swp
 gvim--remote-send ':sp ~/.db/wiki/plan.md<CR>'

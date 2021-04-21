@@ -3,7 +3,7 @@ layout: bin
 name: projects_without_next.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Напечатать список проектов, по которым не определены дальнейшие действия в taskwarrior"""
 

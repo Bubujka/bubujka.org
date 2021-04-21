@@ -3,7 +3,7 @@ layout: bin
 name: packages-symlinks
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 from glob import glob

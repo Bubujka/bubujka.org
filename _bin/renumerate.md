@@ -3,7 +3,7 @@ layout: bin
 name: renumerate
 ---
 
-```sh
+```
 #!/bin/bash
 EXT=$1
 

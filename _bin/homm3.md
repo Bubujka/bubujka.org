@@ -3,7 +3,7 @@ layout: bin
 name: homm3
 ---
 
-```sh
+```
 #!/bin/bash
 cd ~/.wine/drive_c/GOG\ Games/HoMM\ 3\ Complete
 wine ~/.wine/drive_c/GOG\ Games/HoMM\ 3\ Complete/HD_Launcher.exe

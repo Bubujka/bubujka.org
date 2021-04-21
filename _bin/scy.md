@@ -3,7 +3,7 @@ layout: bin
 name: scy
 ---
 
-```sh
+```
 #!/bin/bash
 # Запись видео с экрана
 export VIDEO_RECORDING_RESOLUTION='1600x900' # у меня такой экран

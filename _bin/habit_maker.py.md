@@ -3,7 +3,7 @@ layout: bin
 name: habit_maker.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """
 Менеджер привычек

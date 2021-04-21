@@ -3,7 +3,7 @@ layout: bin
 name: efx
 ---
 
-```sh
+```
 #!/bin/bash
 # Прогнать stdin через eslint --fix
 TMPFILE=$(mktemp)

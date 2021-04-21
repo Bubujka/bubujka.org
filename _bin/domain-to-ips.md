@@ -3,7 +3,7 @@ layout: bin
 name: domain-to-ips
 ---
 
-```sh
+```
 #!/usr/bin/env node
 // Преобразовать домены из stdin в ip-адреса
 const dns = require('dns');

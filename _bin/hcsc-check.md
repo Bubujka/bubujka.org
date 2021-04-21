@@ -3,7 +3,7 @@ layout: bin
 name: hcsc-check
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 if ps -p "$(cat ~/.pid/hc-mode.pid )";

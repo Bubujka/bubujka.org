@@ -3,7 +3,7 @@ layout: bin
 name: mydump
 ---
 
-```sh
+```
 #!/bin/bash
 mysqldump $@ --no-data --compact --compatible=mysql323 |sed 's/^CREATE/\n\nCREATE/g'
 ```

@@ -3,7 +3,7 @@ layout: bin
 name: new-card-from-dmenu
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 cd ~/.db/$1

@@ -3,7 +3,7 @@ layout: bin
 name: window_activity.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """
 Перехват логов активности в i3

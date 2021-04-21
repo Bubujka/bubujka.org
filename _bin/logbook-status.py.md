@@ -3,7 +3,7 @@ layout: bin
 name: logbook-status.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Посчитать статус логбука"""
 from glob import glob

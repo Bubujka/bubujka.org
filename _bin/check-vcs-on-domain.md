@@ -3,7 +3,7 @@ layout: bin
 name: check-vcs-on-domain
 ---
 
-```sh
+```
 #!/bin/bash
 # Проверить - есть ли уязвиость git / svn на домене
 

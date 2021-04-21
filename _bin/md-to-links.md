@@ -3,7 +3,7 @@ layout: bin
 name: md-to-links
 ---
 
-```sh
+```
 #!/usr/bin/env php
 <?php
 mb_internal_encoding("utf-8");

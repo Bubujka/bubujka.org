@@ -3,7 +3,7 @@ layout: bin
 name: mail-me-if-something-wrong
 ---
 
-```sh
+```
 #!/bin/bash
 
 . ~/.bu-config

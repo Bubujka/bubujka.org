@@ -3,7 +3,7 @@ layout: bin
 name: spacify
 ---
 
-```sh
+```
 #!/usr/bin/env php
 <?php # Сделать вместо одного переноса строки - два в потоке ввода
 echo str_replace("\n", "\n\n", file_get_contents('php://stdin'));

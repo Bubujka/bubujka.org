@@ -3,7 +3,7 @@ layout: bin
 name: vimstatus
 ---
 
-```sh
+```
 #!/bin/bash
 TEXT="$(git status --short)" 
 if [ ! -n "$TEXT" ] ; then

@@ -3,7 +3,7 @@ layout: bin
 name: personal-mode
 ---
 
-```sh
+```
 #!/bin/bash
 echo > ~/.taskrc-dynamic
 echo 'urgency.user.project.beta.coefficient=-2' >> ~/.taskrc-dynamic

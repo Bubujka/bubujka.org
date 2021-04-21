@@ -3,7 +3,7 @@ layout: bin
 name: pinknoise
 ---
 
-```sh
+```
 #!/bin/bash
 play -t sl -r48000 -c2 -n synth -1 pinknoise .1 60
 

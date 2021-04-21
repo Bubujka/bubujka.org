@@ -3,7 +3,7 @@ layout: bin
 name: git-init-prj
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bu-config
 git init

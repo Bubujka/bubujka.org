@@ -3,7 +3,7 @@ layout: bin
 name: wiki-commit-and-push
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 notify-send "Wiki sync..."

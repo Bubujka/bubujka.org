@@ -3,7 +3,7 @@ layout: bin
 name: dmenu-timer
 ---
 
-```sh
+```
 #!/bin/bash
 # Запустить таймер (pomodoro) через dmenu
 TIMES="10m

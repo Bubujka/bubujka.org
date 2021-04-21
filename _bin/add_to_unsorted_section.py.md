@@ -3,7 +3,7 @@ layout: bin
 name: add_to_unsorted_section.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 """Добавление строки в секцию # [unsorted] у файла"""

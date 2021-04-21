@@ -3,7 +3,7 @@ layout: bin
 name: make-chromium-default-again
 ---
 
-```sh
+```
 #!/bin/bash
 sudo update-alternatives --set gnome-www-browser /usr/bin/chromium-browser
 sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser

@@ -3,7 +3,7 @@ layout: bin
 name: domain-grep-header
 ---
 
-```sh
+```
 #!/usr/bin/env node
 // Вывести содержимое одного из header у списка доменов в stdin
 

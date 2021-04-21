@@ -3,7 +3,7 @@ layout: bin
 name: br
 ---
 
-```sh
+```
 #!/usr/bin/env bash
 # Открыть ссылку в браузере
 if [ "$#" -eq 0 ]; then

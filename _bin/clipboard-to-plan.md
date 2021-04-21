@@ -3,7 +3,7 @@ layout: bin
 name: clipboard-to-plan
 ---
 
-```sh
+```
 #!/bin/bash
 # Записать содержимое буфера обмена в plan-файл
 . ~/.bashrc

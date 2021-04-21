@@ -3,7 +3,7 @@ layout: bin
 name: newcast
 ---
 
-```sh
+```
 #!/bin/bash
 gnome-terminal --window-with-profile mkcast -t mkcast --disable-factory >/dev/null 2>&1 &
 sleep 0.5

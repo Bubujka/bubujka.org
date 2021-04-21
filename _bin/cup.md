@@ -3,7 +3,7 @@ layout: bin
 name: cup
 ---
 
-```sh
+```
 #!/bin/bash
 
 cleanup.py | tee -a  ~/.db/wiki/plan.md

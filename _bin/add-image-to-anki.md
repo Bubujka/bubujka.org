@@ -3,7 +3,7 @@ layout: bin
 name: add-image-to-anki
 ---
 
-```sh
+```
 #!/bin/bash
 # Добавить изображение в anki
 if [ "$(hostname)" == "titty" ] ;

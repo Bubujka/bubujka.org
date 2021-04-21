@@ -3,7 +3,7 @@ layout: bin
 name: diablo-2
 ---
 
-```sh
+```
 #!/bin/bash
 # Запустить диаблу
 WINEPREFIX=~/.diablo/$1 wine ~/.diablo/$1/drive_c/Program\ Files/Diablo\ II/Diablo\ II.exe -w -skiptobnet

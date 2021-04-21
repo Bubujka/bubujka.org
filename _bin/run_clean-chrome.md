@@ -3,7 +3,7 @@ layout: bin
 name: run_clean-chrome
 ---
 
-```sh
+```
 #!/bin/bash
 # Запустить хром через socks5 туннель
 . ~/.bashrc

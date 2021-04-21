@@ -3,7 +3,7 @@ layout: bin
 name: livecoding.sh
 ---
 
-```sh
+```
 #!/bin/bash
 
 INRES="1600x900" # input resolution

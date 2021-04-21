@@ -3,7 +3,7 @@ layout: bin
 name: mkcast
 ---
 
-```sh
+```
 #!/bin/bash
 
 if [ $# -lt 2 ]

@@ -3,7 +3,7 @@ layout: bin
 name: git-check
 ---
 
-```sh
+```
 #!/bin/bash
 
 ## gitcheck:

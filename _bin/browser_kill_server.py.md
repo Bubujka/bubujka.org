@@ -3,7 +3,7 @@ layout: bin
 name: browser_kill_server.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Сервер, который прибивает все запущенные процессы по списку названий"""
 

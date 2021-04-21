@@ -3,7 +3,7 @@ layout: bin
 name: av-enc
 ---
 
-```sh
+```
 #!/bin/bash
 set -o errexit
 set -o xtrace

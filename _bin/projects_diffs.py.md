@@ -3,7 +3,7 @@ layout: bin
 name: projects_diffs.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Проверить разницу между файлами проектов"""
 

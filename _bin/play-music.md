@@ -3,7 +3,7 @@ layout: bin
 name: play-music
 ---
 
-```sh
+```
 #!/bin/bash
 cd ~/.db/music
 echo Playlist:

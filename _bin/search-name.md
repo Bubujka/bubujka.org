@@ -3,7 +3,7 @@ layout: bin
 name: search-name
 ---
 
-```sh
+```
 #!/bin/bash
 NAME=$(names_index.py | dmenu-wrapper Name 100)
 echo "$NAME" | xclip -selection pri

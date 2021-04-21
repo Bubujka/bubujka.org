@@ -3,7 +3,7 @@ layout: bin
 name: webpack-profile
 ---
 
-```sh
+```
 #!/bin/bash
 set -o errexit
 set -o xtrace

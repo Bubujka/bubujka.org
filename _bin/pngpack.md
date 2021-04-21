@@ -3,7 +3,7 @@ layout: bin
 name: pngpack
 ---
 
-```sh
+```
 #!/bin/bash
 for var in "$@"
 do

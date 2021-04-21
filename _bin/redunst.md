@@ -3,7 +3,7 @@ layout: bin
 name: redunst
 ---
 
-```sh
+```
 #!/bin/bash
 killall -KILL -w notify-osd
 killall -KILL -w dunst 2> /dev/null

@@ -3,7 +3,7 @@ layout: bin
 name: asna
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 # Программа для записи задач в asana из консоли
 require "rubygems"

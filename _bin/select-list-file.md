@@ -3,7 +3,7 @@ layout: bin
 name: select-list-file
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 prefix = '/home/bubujka/.db/lists/'
 files = Dir[prefix+'*']

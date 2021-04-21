@@ -3,7 +3,7 @@ layout: bin
 name: send-voice-mail
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bu-config
 

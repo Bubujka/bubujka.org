@@ -3,7 +3,7 @@ layout: bin
 name: work-tgl
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 tgl puffy -w 281169

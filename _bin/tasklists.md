@@ -3,7 +3,7 @@ layout: bin
 name: tasklists
 ---
 
-```sh
+```
 #!/usr/bin/env node
 var fs = require('fs');
 var yaml = require('js-yaml');

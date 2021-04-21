@@ -3,7 +3,7 @@ layout: bin
 name: prettify.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 import sys
 

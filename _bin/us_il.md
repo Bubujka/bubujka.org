@@ -3,7 +3,7 @@ layout: bin
 name: us_il
 ---
 
-```sh
+```
 #!/bin/bash
 setxkbmap -layout us,il -option grp:toggle
 notify-flash "i3" "Il"

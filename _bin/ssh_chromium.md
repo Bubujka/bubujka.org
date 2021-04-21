@@ -3,7 +3,7 @@ layout: bin
 name: ssh_chromium
 ---
 
-```sh
+```
 #!/bin/bash
 # Запустить хром через socks5 туннель
 . ~/.bashrc

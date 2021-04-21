@@ -3,7 +3,7 @@ layout: bin
 name: vim-last
 ---
 
-```sh
+```
 #!/bin/bash
 if [ -n $1 ]
 then

@@ -3,7 +3,7 @@ layout: bin
 name: video-to-html5
 ---
 
-```sh
+```
 #!/bin/bash
 # Сконвертировать видео в mp4,webm,ogv
 if [ "$#" -eq 0 ]; then

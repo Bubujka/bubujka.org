@@ -3,7 +3,7 @@ layout: bin
 name: my_commands.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Напечатать документацию по всем моим командам"""
 

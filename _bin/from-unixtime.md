@@ -3,7 +3,7 @@ layout: bin
 name: from-unixtime
 ---
 
-```sh
+```
 #!/usr/bin/env php
 <?php // Превратить unixtime to iso8601
 date_default_timezone_set('Europe/Moscow');

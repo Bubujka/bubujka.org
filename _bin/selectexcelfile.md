@@ -3,7 +3,7 @@ layout: bin
 name: selectexcelfile
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """
 Скрипт для выбора файла в каталоге и

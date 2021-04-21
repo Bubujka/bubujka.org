@@ -3,7 +3,7 @@ layout: bin
 name: phps
 ---
 
-```sh
+```
 #!/bin/bash
 echo http://local.bubujka.org:$1 | br
 php -S 0.0.0.0:$1

@@ -3,7 +3,7 @@ layout: bin
 name: new-tab
 ---
 
-```sh
+```
 #!/bin/bash
 i3-workspace www
 sleep 0.1

@@ -3,7 +3,7 @@ layout: bin
 name: make-swap-on-server
 ---
 
-```sh
+```
 #!/bin/bash
 if [ "$#" -ne 2 ]; then
       echo "Надо передать 2 параметра: адрес сервера и объём свап файла!"

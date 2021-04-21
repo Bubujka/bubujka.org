@@ -3,7 +3,7 @@ layout: bin
 name: writ-to-tw
 ---
 
-```sh
+```
 #!/bin/bash
 # Записать через dmenu в taskwarrior
 . ~/.bashrc

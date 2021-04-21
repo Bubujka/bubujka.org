@@ -3,7 +3,7 @@ layout: bin
 name: notify-flash
 ---
 
-```sh
+```
 #!/bin/bash
 TITLE="$1"
 shift

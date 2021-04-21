@@ -3,7 +3,7 @@ layout: bin
 name: select-prj
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 def dmenu_gets variants, opts
   ret = nil

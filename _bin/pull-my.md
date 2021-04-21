@@ -3,7 +3,7 @@ layout: bin
 name: pull-my
 ---
 
-```sh
+```
 #!/bin/bash
 echo "Downloading..."
 for dir in \

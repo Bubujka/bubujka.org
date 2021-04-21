@@ -3,7 +3,7 @@ layout: bin
 name: puffy-tgl
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.password
 . ~/.rvm/environments/default

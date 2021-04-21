@@ -3,7 +3,7 @@ layout: bin
 name: webcam
 ---
 
-```sh
+```
 #!/bin/bash
 # Вывести видео с веб-камеры на экран
 cd ~/.db/photo/webcam

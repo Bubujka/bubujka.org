@@ -3,7 +3,7 @@ layout: bin
 name: prj-xterm
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 def dmenu_gets variants, opts
   ret = nil

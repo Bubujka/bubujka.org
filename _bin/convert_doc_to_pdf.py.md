@@ -3,7 +3,7 @@ layout: bin
 name: convert_doc_to_pdf.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 
 from glob import glob

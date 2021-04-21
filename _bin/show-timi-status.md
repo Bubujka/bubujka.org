@@ -3,7 +3,7 @@ layout: bin
 name: show-timi-status
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 while true; do

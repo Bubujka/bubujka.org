@@ -3,7 +3,7 @@ layout: bin
 name: run-anki
 ---
 
-```sh
+```
 #!/bin/bash
 if ps -p "$(cat ~/.pid/anki.pid )";
 then

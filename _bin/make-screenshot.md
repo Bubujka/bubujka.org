@@ -3,7 +3,7 @@ layout: bin
 name: make-screenshot
 ---
 
-```sh
+```
 #!/bin/bash
 
 mkdir -p ~/.db/history/screenshot || true

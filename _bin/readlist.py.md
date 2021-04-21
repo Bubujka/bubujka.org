@@ -3,7 +3,7 @@ layout: bin
 name: readlist.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 from os.path import expanduser
 import re

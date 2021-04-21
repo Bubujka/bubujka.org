@@ -3,7 +3,7 @@ layout: bin
 name: new-card-from-xclip
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 data=`xclip -o`

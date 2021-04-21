@@ -3,7 +3,7 @@ layout: bin
 name: dmenu-wrapper
 ---
 
-```sh
+```
 #!/bin/bash
 # Враппер для dmenu, который устанавливает стиль и кодировку
 LINES="-l 42"

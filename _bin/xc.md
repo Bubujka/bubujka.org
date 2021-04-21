@@ -3,7 +3,7 @@ layout: bin
 name: xc
 ---
 
-```sh
+```
 #!/bin/bash
 # Скопировать stdin или переданный аргумент в буфер обмена
 if [ $# -eq 0 ]; then

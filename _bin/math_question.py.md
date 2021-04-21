@@ -3,7 +3,7 @@ layout: bin
 name: math_question.py
 ---
 
-```sh
+```
 #!/usr/bin/env python3
 """Команда для создания паузы у человека для 'подумать' """
 

@@ -3,7 +3,7 @@ layout: bin
 name: nice-html
 ---
 
-```sh
+```
 #!/bin/bash
 # Оформляет html красиво
 cat - | tidy -raw -i -q -w 250 --show-body-only yes

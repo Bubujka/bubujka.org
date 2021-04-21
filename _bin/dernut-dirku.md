@@ -3,7 +3,7 @@ layout: bin
 name: dernut-dirku
 ---
 
-```sh
+```
 #!/bin/bash
 set -o errexit
 set -o xtrace

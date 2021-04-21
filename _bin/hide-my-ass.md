@@ -3,7 +3,7 @@ layout: bin
 name: hide-my-ass
 ---
 
-```sh
+```
 #!/bin/bash
 # Создаёт защищённый туннель до моего сервера
 . ~/.bashrc

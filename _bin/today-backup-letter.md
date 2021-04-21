@@ -3,7 +3,7 @@ layout: bin
 name: today-backup-letter
 ---
 
-```sh
+```
 #!/bin/bash
 # Получить букву, по которой удобно хранить бэкап
 l_128='h'; l_64='g'; l_32='f'; l_16='e'; l_8='d'; l_4='c'; l_2='b'; l_1='a';

@@ -3,7 +3,7 @@ layout: bin
 name: mykbd
 ---
 
-```sh
+```
 #!/bin/bash
 setxkbmap -layout $1
 setxkbmap -layout us,$1 -option grp:shifts_toggle

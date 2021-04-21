@@ -3,7 +3,7 @@ layout: bin
 name: git-mkdir
 ---
 
-```sh
+```
 #!/bin/bash
 mkdir -p "$1"
 touch "$1/.gitkeep"

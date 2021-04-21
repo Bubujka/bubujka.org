@@ -3,7 +3,7 @@ layout: bin
 name: site-runner
 ---
 
-```sh
+```
 #!/usr/bin/env ruby
 $def_file = "~/.sites ~/.sites-private"
 if ARGV.length == 1

@@ -3,7 +3,7 @@ layout: bin
 name: write-to-basecamp-my-target
 ---
 
-```sh
+```
 #!/bin/bash
 . ~/.bashrc
 

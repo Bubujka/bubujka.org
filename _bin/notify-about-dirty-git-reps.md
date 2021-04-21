@@ -3,7 +3,7 @@ layout: bin
 name: notify-about-dirty-git-reps
 ---
 
-```sh
+```
 #!/bin/bash
 TEMP=$(mktemp)
 for dir in `find ~/ -type d -name '.git'` 

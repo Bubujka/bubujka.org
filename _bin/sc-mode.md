@@ -3,7 +3,7 @@ layout: bin
 name: sc-mode
 ---
 
-```sh
+```
 #!/bin/bash
 if ps -p "$(cat ~/.pid/sc-mode.pid )";
 then
