@@ -7,6 +7,9 @@
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
 </head>
 <body>
 
@@ -16,7 +19,7 @@
   </div>
 
   <style>
-  pre.highlight{
+  .hljs{
     padding: 10px 20px;
     background: #FEFBF3;
     border: 1px solid rgba(0,0,0,.2);
@@ -24,7 +27,6 @@
     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
     box-shadow: 0 1px 2px rgba(0,0,0,.1);
     border-radius: 3px;
-    overflow-x: scroll;
   }
   </style>
   <script>
@@ -48,7 +50,7 @@
     {% endfor %}
     <div class='hr'></div>
     <p>
-      Мой супер полезный скрипт для чегототам
+      {{page.title}}
     </p>
 
     {{ content }}
@@ -72,6 +74,7 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
     })();
   </script>
+  <script>hljs.highlightAll();</script>
 
 </div>
 </body>
