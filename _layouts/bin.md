@@ -46,7 +46,7 @@
   <div id="post" class='post'>
     <h1>Скрипты {{ page.name }}</h1>
     {% for tag in page.tags %}
-      {{tag}}
+      #{{tag}}
     {% endfor %}
     <div class='hr'></div>
     <p>
