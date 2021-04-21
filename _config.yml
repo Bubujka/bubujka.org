@@ -1,3 +1,4 @@
+highlighter: none
 collections:
   s:
     output: true
