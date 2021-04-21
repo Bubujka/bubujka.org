@@ -86,7 +86,7 @@ def main():
             t['layout'] = 'bin'
             t['name'] = basename(p)
             t['lang'] = detect_lang(p)
-            yfm = yaml.dump(t, allow_unicode=True)
+            yfm = yaml.dump(t, allow_unicode=True, default_flow_style=False)
             with open('_bin/{}.md'.format(basename(p)), 'w') as f:
                 f.write("---\n")
                 f.write(yfm)
