@@ -64,7 +64,7 @@
   <div id='discourse-comments'></div>
   <script type="text/javascript">
     DiscourseEmbed = { discourseUrl: 'https://forum.bubujka.org/',
-                       discourseEmbedUrl: '{{site.url}}{{page.url}}' };
+                       discourseEmbedUrl: 'https://bubujka.org{{page.url}}' };
 
     (function() {
       var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
