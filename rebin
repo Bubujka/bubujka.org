@@ -2,13 +2,16 @@
 
 
 from sys import argv
-from os.path import expanduser, isfile, basename
+from os.path import expanduser, isfile, basename, realpath, exists
 from glob import glob
 from subprocess import check_output
 
 import yaml
 
-BASE=expanduser("~/.bu.bin/bin")
+if exists(realpath('../bu.bin/bin')):
+    BASE=realpath('../bu.bin/bin')
+else:
+    BASE=expanduser("~/.bu.bin/bin")
 
 def haveyfm(pth):
     t = open(pth).readlines()
