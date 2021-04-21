@@ -1,4 +1,6 @@
 highlighter: none
+syntax_highlighter_opts:
+  disable : true
 collections:
   s:
     output: true
