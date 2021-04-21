@@ -41,8 +41,8 @@
     }, 2000);
   };
   </script>
-  <div id="post">
-    <h1>{{ page.title }}</h1>
+  <div id="post" class='post'>
+    <h1>Скрипты {{ page.name }}</h1>
     {% for tag in page.tags %}
       {{tag}}
     {% endfor %}
