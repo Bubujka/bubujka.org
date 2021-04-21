@@ -1,0 +1,10 @@
+---
+layout: bin
+name: docker-routes
+---
+
+```sh
+#!/bin/bash
+# Исправить роуты у докера (накреняются от vpn)
+sudo route add -net 172.17.0.0 netmask 255.255.0.0 dev docker0
+```

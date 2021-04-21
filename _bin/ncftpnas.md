@@ -1,0 +1,9 @@
+---
+layout: bin
+name: ncftpnas
+---
+
+```sh
+#!/bin/bash
+ncftp -u $(pass show nas.betaagency.ru/user) -p $(pass show nas.betaagency.ru/password) 192.168.10.156
+```

@@ -1,0 +1,13 @@
+---
+layout: bin
+name: upgrade-nvm
+---
+
+```sh
+#!/bin/bash
+# Команда для обновления nvm
+
+cd ~/.nvm
+git fetch origin
+git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" origin`
+```

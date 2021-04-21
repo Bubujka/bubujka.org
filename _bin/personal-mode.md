@@ -1,0 +1,17 @@
+---
+layout: bin
+name: personal-mode
+---
+
+```sh
+#!/bin/bash
+echo > ~/.taskrc-dynamic
+echo 'urgency.user.project.beta.coefficient=-2' >> ~/.taskrc-dynamic
+
+rm ~/.pid/work-mode
+touch ~/.pid/personal-mode
+
+notify-flash 'personal mode'
+
+killall -s SIGUSR1 i3status
+```

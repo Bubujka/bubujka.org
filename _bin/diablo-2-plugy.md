@@ -1,0 +1,20 @@
+---
+layout: bin
+name: diablo-2-plugy
+---
+
+```sh
+#!/bin/bash
+# Закоммитить сэйвы диаблы и запустить Plugy версию
+cd ~/.d2plugy/drive_c/Diablo2/save
+#git add .
+#git ac
+#git push
+
+cd ~/.d2plugy/drive_c/Diablo2/Mod\ PlugY/
+
+WINEPREFIX=~/.d2plugy wine PlugY.exe -w &
+#cd ~/.d2plugy/drive_c/Diablo2/BH\ 1.5s2-1.13c/
+#sleep 5
+#WINEPREFIX=~/.d2plugy wine  -w &
+```

@@ -1,0 +1,12 @@
+---
+layout: bin
+name: resort-journal-cron
+---
+
+```sh
+#!/bin/bash
+. ~/.bashrc
+cd ~/.db/wiki
+cat _journal | resort-journal > _journal2
+mv _journal2 _journal
+```

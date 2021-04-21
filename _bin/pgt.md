@@ -1,0 +1,13 @@
+---
+layout: bin
+name: pgt
+---
+
+```sh
+#!/bin/bash
+# Сгенерить md5 hash короткий от пользовательского ввода и скопировать в буфер
+length=9
+read -s key
+hash=`echo -n $key | md5php`
+echo -n ${hash:0:$length} | xc > /dev/null
+```

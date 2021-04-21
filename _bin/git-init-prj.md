@@ -1,0 +1,17 @@
+---
+layout: bin
+name: git-init-prj
+---
+
+```sh
+#!/bin/bash
+. ~/.bu-config
+git init
+git checkout --orphan $1
+touch README.md
+git add README.md
+git commit -m 'initial commit'
+git remote add origin $PRJ_REPOSITORY
+git push -u origin $1
+sed -i "s/\*/$1/g" .git/config
+```

@@ -1,0 +1,25 @@
+---
+layout: bin
+name: ojli_card
+---
+
+```sh
+#!/bin/bash
+. ~/.bashrc
+
+TARGET="$(asna target_list | dmenu-wrapper 'asana КУДА' 5)"
+if [ ! -n "$TARGET" ] ; then
+  echo "Aborted" | dzen2 -p 1 -bg "#ffffff" -fg "#000000" 
+  exit
+fi
+
+TEXT=`echo | dmenu-wrapper "asana ЧТО"`
+if [ ! -n "$TEXT" ] ; then
+  echo "Aborted" | dzen2 -p 1 -bg "#ffffff" -fg "#000000" 
+  exit
+fi
+
+asna add "$TARGET" "$TEXT"
+
+echo "Added to asana" | dzen2 -p 1 -bg "#00ee00" -fg "#000000" 
+```

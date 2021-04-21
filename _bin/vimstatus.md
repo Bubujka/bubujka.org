@@ -1,0 +1,14 @@
+---
+layout: bin
+name: vimstatus
+---
+
+```sh
+#!/bin/bash
+TEXT="$(git status --short)" 
+if [ ! -n "$TEXT" ] ; then
+  echo "Nothing changed"
+  exit
+fi
+git status --short | vim -
+```

@@ -1,0 +1,11 @@
+---
+layout: bin
+name: photoshop
+---
+
+```sh
+#!/bin/bash
+export WINEPREFIX=$HOME/.wine
+cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Adobe/Photoshop\ CS
+wine Photoshop.exe $@
+```

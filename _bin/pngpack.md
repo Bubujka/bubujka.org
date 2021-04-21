@@ -1,0 +1,14 @@
+---
+layout: bin
+name: pngpack
+---
+
+```sh
+#!/bin/bash
+for var in "$@"
+do
+  echo $var;
+  cat "$var" | pngquant --quality=60-85 - > "$var".out
+  mv "$var".out  "$var"
+done
+```

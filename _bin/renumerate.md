@@ -1,0 +1,20 @@
+---
+layout: bin
+name: renumerate
+---
+
+```sh
+#!/bin/bash
+EXT=$1
+
+shift
+a=1
+
+while test $# -gt 0
+do
+  echo "$1" "->" $a.$EXT
+  mv "$1" $a.$EXT
+  shift
+  let a=a+1
+done
+```

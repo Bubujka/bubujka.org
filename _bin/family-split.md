@@ -1,0 +1,14 @@
+---
+layout: bin
+name: family-split
+---
+
+```sh
+#!/usr/bin/env php
+<?php // Бухучёт~~
+$s = (int)trim(file_get_contents('php://stdin'));
+echo "Лена: ".(int)($s*0.33)."\n";
+echo "Я: ".($s - (int)($s*0.33))."\n";
+echo "Всего: ".(int)($s)."\n";
+
+```

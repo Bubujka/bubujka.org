@@ -1,0 +1,9 @@
+---
+layout: bin
+name: hebrew-kbd-help
+---
+
+```sh
+#!/bin/bash
+feh --title hebrewkbd -g 436x169+1162+709 ~/.db/files/hebrew-keyboard-layout/keyboard-212.png
+```

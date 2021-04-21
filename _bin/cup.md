@@ -1,0 +1,12 @@
+---
+layout: bin
+name: cup
+---
+
+```sh
+#!/bin/bash
+
+cleanup.py | tee -a  ~/.db/wiki/plan.md
+projects_without_next.py | tee -a  ~/.db/wiki/plan.md
+open-in-gvim ~/.db/wiki/plan.md
+```

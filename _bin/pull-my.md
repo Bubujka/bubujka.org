@@ -1,0 +1,25 @@
+---
+layout: bin
+name: pull-my
+---
+
+```sh
+#!/bin/bash
+echo "Downloading..."
+for dir in \
+  ~/.db/wiki \
+  ~/.db/gnucash \
+  ~/.db/dotfiles \
+  ~/.db/inventory \
+  ~/.db/dotfiles-private \
+  ~/.password-store \
+  ~/.bu.bin \
+  ~/.db/prj/websites \
+  ~/.myi3status
+do
+  if [ -d $dir ]; then
+    cd $dir
+    git pull &
+  fi
+done
+```

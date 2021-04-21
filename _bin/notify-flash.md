@@ -1,0 +1,12 @@
+---
+layout: bin
+name: notify-flash
+---
+
+```sh
+#!/bin/bash
+TITLE="$1"
+shift
+MSG="$@"
+notify-send -t 1 -u low "$TITLE" "$MSG"
+```

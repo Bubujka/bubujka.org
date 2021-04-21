@@ -1,0 +1,24 @@
+---
+layout: bin
+name: hc-mode
+---
+
+```sh
+#!/bin/bash
+if ps -p "$(cat ~/.pid/hc-mode.pid )";
+then
+  exit 1;
+fi
+
+browser_kill_server.py &
+
+PID=$!
+echo -n $PID > ~/.pid/hc-mode.pid
+
+
+kill -9 $(cat ~/.pid/sc-mode.pid)
+sleep 0.3
+i3-workspace vim
+killall -s SIGUSR1 i3status
+notify-flash HC-mode
+```

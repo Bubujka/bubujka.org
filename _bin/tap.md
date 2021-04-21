@@ -1,0 +1,19 @@
+---
+layout: bin
+name: tap
+---
+
+```sh
+#!/usr/bin/env python3
+"""Добавить в task с указанием проекта"""
+import sys
+from subprocess import check_call as call
+
+def main():
+    for line in sys.stdin:
+        if line.strip() != "":
+            call('task add project:'+line, shell=True)
+
+if __name__ == '__main__':
+    main()
+```

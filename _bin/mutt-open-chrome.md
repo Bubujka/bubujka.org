@@ -1,0 +1,13 @@
+---
+layout: bin
+name: mutt-open-chrome
+---
+
+```sh
+#!/usr/bin/env bash
+echo '<html><meta charset="utf8">' > "${1}_utf8.html"
+cat "$1" >> "${1}_utf8.html"
+chromium-browser "${1}_utf8.html"
+i3-workspace www
+
+```

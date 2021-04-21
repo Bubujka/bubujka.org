@@ -1,0 +1,15 @@
+---
+layout: bin
+name: select-dotfile-file
+---
+
+```sh
+#!/bin/bash
+
+cd ~/.db/dotfiles
+FILE=$(find . -type f |grep -v '.swp' |grep -v 'vim/.vim/' | grep -v 'install.sh' | grep -v '.git' | grep -v '.vim/bundle' | ~/.bu.bin/bin/dmenu-wrapper dotfile 20)
+if [ -n "$FILE" ]; then
+  gvim--remote-send "<esc><esc>:sp ~/.db/dotfiles/$FILE<CR>"
+  i3-workspace vim
+fi
+```

@@ -1,0 +1,20 @@
+---
+layout: bin
+name: sc-mode
+---
+
+```sh
+#!/bin/bash
+if ps -p "$(cat ~/.pid/sc-mode.pid )";
+then
+  kill -9 "$(cat ~/.pid/sc-mode.pid)"
+fi
+
+sleep 18000 &
+PID=$!
+echo -n $PID > ~/.pid/sc-mode.pid
+
+kill -9 "$(cat ~/.pid/hc-mode.pid)"
+killall -s SIGUSR1 i3status
+notify-flash sc-mode
+```

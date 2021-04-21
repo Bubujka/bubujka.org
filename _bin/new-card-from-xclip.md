@@ -1,0 +1,18 @@
+---
+layout: bin
+name: new-card-from-xclip
+---
+
+```sh
+#!/bin/bash
+. ~/.bashrc
+data=`xclip -o`
+if [[ "$data" == *http* ]]
+then
+        new-link-from-xclip
+        exit
+fi
+cd ~/.db/$1
+xclip -o >> `next-n-in-dir`
+notify-send -t 500 "writing to $1"
+```

@@ -1,0 +1,15 @@
+---
+layout: bin
+name: run-anki
+---
+
+```sh
+#!/bin/bash
+if ps -p "$(cat ~/.pid/anki.pid )";
+then
+  exit 1;
+fi
+
+anki &
+echo -n $! > ~/.pid/anki.pid
+```

@@ -1,0 +1,17 @@
+---
+layout: bin
+name: link-to-md
+---
+
+```sh
+#!/usr/bin/env python3
+"""Превратить stdin в markdown ссылки"""
+
+import sys
+import urllib.parse
+
+
+for line in sys.stdin:
+    t = urllib.parse.urlparse(line)
+    print("[{}]({})".format(t.netloc, line.strip()))
+```

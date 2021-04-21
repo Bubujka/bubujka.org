@@ -1,0 +1,14 @@
+---
+layout: bin
+name: git-is-dirty
+---
+
+```sh
+#!/bin/bash
+if [ $(git status --porcelain | wc -l ) == 0 ] ;
+then
+  exit 0
+else
+  exit 1
+fi
+```

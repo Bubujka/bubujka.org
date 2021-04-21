@@ -1,0 +1,10 @@
+---
+layout: bin
+name: pizdoker
+---
+
+```sh
+#!/bin/bash
+docker build -t app:latest -f $1 .
+docker run --rm -it app:latest bash
+```

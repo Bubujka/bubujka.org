@@ -1,0 +1,25 @@
+---
+layout: bin
+name: open-gvim
+---
+
+```sh
+#!/bin/bash
+killall -KILL gvim
+
+sleep 0.1
+export PATH=/opt/php:$PATH
+export PATH="./venv/bin:/home/bubujka/.pyenv/bin:$PATH"
+export NVM_DIR="/home/bubujka/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+use-pyenv
+source .ssh_agent_info
+. /home/bubujka/venv/bin/activate
+
+
+export FZF_DEFAULT_COMMAND='ag -g ""'
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+
+gvim
+```

@@ -1,0 +1,16 @@
+---
+layout: bin
+name: vagrant-tpl
+---
+
+```sh
+#!/bin/bash -xe
+
+git clone https://github.com/bubujka/vagrant-tpl.git $1
+
+cd $1
+rm -rf .git
+git init
+
+vagrant up
+```

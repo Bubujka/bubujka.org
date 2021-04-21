@@ -1,0 +1,20 @@
+---
+layout: bin
+name: from-unixtime
+---
+
+```sh
+#!/usr/bin/env php
+<?php // Превратить unixtime to iso8601
+date_default_timezone_set('Europe/Moscow');
+array_shift($argv);
+if(count($argv)){
+  foreach($argv as $v){
+    printf("%s: %s\n", $v, date('c', $v));
+  }
+}else{
+  $v = time();
+  printf("%s: %s\n", $v, date('c', $v));
+}
+//1384963500
+```

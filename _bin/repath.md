@@ -1,0 +1,20 @@
+---
+layout: bin
+name: repath
+---
+
+```sh
+#!/bin/bash
+> ~/.bin_path
+
+cd
+for dir in .bin/*
+do
+  echo 'export PATH=$PATH:$HOME/'"$dir"'/bin' >> ~/.bin_path
+done
+
+for dir in .bin-private/*
+do
+  echo 'export PATH=$PATH:$HOME/'"$dir"'/bin' >> ~/.bin_path
+done
+```

@@ -1,0 +1,11 @@
+---
+layout: bin
+name: minecraftonly
+---
+
+```sh
+#!/bin/bash
+# Запустить minecraftonly
+/usr/lib/jvm/java-7-openjdk-i386/jre/bin/java -jar ~/.db/game/minecraftonly.jar
+
+```

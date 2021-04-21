@@ -1,0 +1,32 @@
+---
+layout: bin
+name: site-runner
+---
+
+```sh
+#!/usr/bin/env ruby
+$def_file = "~/.sites ~/.sites-private"
+if ARGV.length == 1
+  $file = ARGV[0]
+else
+  `cat #{$def_file} > ~/.sites-combined`
+  $file = "~/.sites-combined"
+end
+
+def dmenu_gets prefix, rows = 20
+  `cat #{$file} | grep -v '^$' | ~/.bu.bin/bin/dmenu-wrapper #{prefix} #{rows} `.chomp
+end
+app_name = dmenu_gets "Open_app"
+unless app_name.empty?
+  #file = wiki_file
+  puts app_name
+  File.open(File.expand_path $file).each do |line|
+    t = line.split
+    if line.chomp == app_name
+      system "/usr/bin/chromium-browser #{t.last}"
+      system "echo #{t.last} | xc"
+      system "i3-workspace www"
+    end
+  end
+end
+```

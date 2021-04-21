@@ -1,0 +1,16 @@
+---
+layout: bin
+name: wiki-stats
+---
+
+```sh
+#!/bin/bash
+cd ~/.db/wiki
+echo ".md:"
+echo ' 'Files: $(ls *.md | grep -v 'snippet' | wc -l)
+echo ' 'Total characters: $(cat $(ls *.md | grep -v 'snippet') | wc -c)
+
+echo ".snippet.md:"
+echo ' 'Files: $(ls *.snippet.md | wc -l)
+echo ' 'Total characters: $(cat $(ls *.snippet.md) | wc -c)
+```

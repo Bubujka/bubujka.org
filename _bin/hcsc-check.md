@@ -1,0 +1,18 @@
+---
+layout: bin
+name: hcsc-check
+---
+
+```sh
+#!/bin/bash
+. ~/.bashrc
+if ps -p "$(cat ~/.pid/hc-mode.pid )";
+then
+  exit 1;
+fi
+if ps -p "$(cat ~/.pid/sc-mode.pid )";
+then
+  exit 1;
+fi
+hc-mode > /dev/null 2>&1 &
+```

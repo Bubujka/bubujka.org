@@ -1,0 +1,17 @@
+---
+layout: bin
+name: writ-to-tw
+---
+
+```sh
+#!/bin/bash
+# Записать через dmenu в taskwarrior
+. ~/.bashrc
+TARGET="$(dmenu-wrapper 'Task?' 0)"
+if [ ! -n "$TARGET" ]; then
+  echo "Aborted" | dzen2-wrapper red ; exit
+fi
+
+task add $TARGET
+echo "Writed" | dzen2-wrapper green
+```

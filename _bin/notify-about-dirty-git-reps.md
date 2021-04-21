@@ -1,0 +1,34 @@
+---
+layout: bin
+name: notify-about-dirty-git-reps
+---
+
+```sh
+#!/bin/bash
+TEMP=$(mktemp)
+for dir in `find ~/ -type d -name '.git'` 
+do 
+  cd $dir;
+  cd ..
+  if [ $(git status --porcelain | wc -l ) != 0 ] ;
+  then
+    echo $dir >> $TEMP
+    echo  >> $TEMP
+    echo "git status:" >> $TEMP
+    git status --porcelain >> $TEMP
+    echo '---------------------------------' >> $TEMP
+    echo  >> $TEMP
+    echo  >> $TEMP
+  fi
+done
+
+if [ $(cat $TEMP | wc -l) != 0 ];
+then
+  cat $TEMP | mail \
+    -a "From: $MSMTP_FROM" \
+    -s "У '$(hostname)' есть незакомиченные репы" \
+    $1
+fi
+
+rm $TEMP
+```

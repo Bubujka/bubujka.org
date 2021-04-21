@@ -1,0 +1,10 @@
+---
+layout: bin
+name: battery-info
+---
+
+```sh
+#!/bin/bash
+# Получить информацию по батарее
+upower -i /org/freedesktop/UPower/devices/battery_BAT0
+```

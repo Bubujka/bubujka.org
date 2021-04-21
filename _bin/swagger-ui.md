@@ -1,0 +1,14 @@
+---
+layout: bin
+name: swagger-ui
+---
+
+```sh
+#!/bin/bash
+CURRENT_DIR="$(pwd)"
+cd ~/.db/prj/swagger-ui
+#git pull
+cd "$CURRENT_DIR"
+cp -r ~/.db/prj/swagger-ui/dist swagger
+vim swagger/index.html
+```

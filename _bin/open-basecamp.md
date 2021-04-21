@@ -1,0 +1,15 @@
+---
+layout: bin
+name: open-basecamp
+---
+
+```sh
+#!/bin/bash
+. ~/.bashrc
+
+TARGET="$(puffy targets | dmenu-wrapper 'Какой basecamp открыть:' 12)"
+if [ ! -n "$TARGET" ]; then
+  echo "Aborted" | dzen2-wrapper red ; exit
+fi
+puffy browser "$TARGET" 
+```

@@ -1,0 +1,13 @@
+---
+layout: bin
+name: pt
+---
+
+```sh
+#!/bin/bash
+if [ "$#" -eq 0 ]; then
+  ./vendor/bin/phpunit
+else
+  ./vendor/bin/phpunit "$1"
+fi
+```

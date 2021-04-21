@@ -1,0 +1,13 @@
+---
+layout: bin
+name: redunst
+---
+
+```sh
+#!/bin/bash
+killall -KILL -w notify-osd
+killall -KILL -w dunst 2> /dev/null
+bash -c 'dunst > /dev/null 2> /dev/null' &
+sleep 1 && notify-send "Dunst restarted"
+
+```

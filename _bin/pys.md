@@ -1,0 +1,11 @@
+---
+layout: bin
+name: pys
+---
+
+```sh
+#!/bin/bash
+# Запустить по-быстрому simple-http-server
+python -m SimpleHTTPServer
+br http://local.bubujka.org:8000
+```

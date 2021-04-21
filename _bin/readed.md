@@ -1,0 +1,14 @@
+---
+layout: bin
+name: readed
+---
+
+```sh
+#!/bin/bash
+
+DIRECTORY="$(dirname "$1")"
+mkdir -p "$HOME/.db/readed/$DIRECTORY" 2> /dev/null
+mv "$1" "$HOME/.db/readed/$DIRECTORY/"
+echo "- $1" >> ~/.db/wiki/readed.md
+open-in-gvim ~/.db/wiki/readed.md
+```

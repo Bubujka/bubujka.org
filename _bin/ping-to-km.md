@@ -1,0 +1,11 @@
+---
+layout: bin
+name: ping-to-km
+---
+
+```sh
+#!/usr/bin/env python3
+import sys
+
+print(((int(sys.argv[1])/1000/2)*3*10**8)/1000)
+```

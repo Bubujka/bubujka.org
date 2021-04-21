@@ -1,0 +1,11 @@
+---
+layout: bin
+name: pclip
+---
+
+```sh
+#!/bin/bash
+echo "# $(date)" >> ~/.db/wiki/plan.md
+cat /dev/stdin >> ~/.db/wiki/plan.md
+open-in-gvim ~/.db/wiki/plan.md
+```

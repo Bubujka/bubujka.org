@@ -1,0 +1,15 @@
+---
+layout: bin
+name: webpack-profile
+---
+
+```sh
+#!/bin/bash
+set -o errexit
+set -o xtrace
+set -o pipefail
+
+./node_modules/.bin/webpack --profile --json > ~/stats.json
+br http://webpack.github.io/analyse/
+notify-flash "Загрузи ~/stats.json теперь"
+```

@@ -1,0 +1,9 @@
+---
+layout: bin
+name: mount-kolbot
+---
+
+```sh
+#!/bin/bash
+sudo mount -t cifs -o user=user,rw,password=qwerty,uid=1000,gid=1000,vers=1.0 //192.168.122.153/kolbot ~/.db/prj/kolbot
+```

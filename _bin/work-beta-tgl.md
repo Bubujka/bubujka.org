@@ -1,0 +1,13 @@
+---
+layout: bin
+name: work-beta-tgl
+---
+
+```sh
+#!/bin/bash
+. ~/.bashrc
+tgl puffy -w 358026
+if [[ $# -eq 0 ]] ; then
+  dmenu-timer
+fi
+```

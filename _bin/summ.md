@@ -1,0 +1,18 @@
+---
+layout: bin
+name: summ
+---
+
+```sh
+#!/usr/bin/env php
+<?php # Просуммировать числа из потока ввода
+if($argc == 1){
+  $t = explode(' ', trim(file_get_contents('php://stdin')));
+}else{
+  array_shift($argv);
+  $t = $argv;
+}
+$t = array_map('floatval', $t);
+$sum = 0;
+printf('%s = %s', implode(' + ', $t), array_sum($t));
+```

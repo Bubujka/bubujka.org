@@ -1,0 +1,15 @@
+---
+layout: bin
+name: stop-toggle
+---
+
+```sh
+#!/bin/bash
+. ~/.bashrc
+killall -KILL -w notify-osd
+killall -KILL -w dunst 2> /dev/null
+bash -c 'dunst > /dev/null 2> /dev/null' &
+rm ~/.timer
+notify-send "Timer stopped"
+tgl stop
+```

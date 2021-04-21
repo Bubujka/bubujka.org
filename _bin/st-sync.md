@@ -1,0 +1,11 @@
+---
+layout: bin
+name: st-sync
+---
+
+```sh
+#!/bin/bash
+. ~/.bashrc
+cd ~/.db/storage
+s3cmd sync -r * s3://$STORAGE_BUCKET
+```

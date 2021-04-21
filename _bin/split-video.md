@@ -1,0 +1,52 @@
+---
+layout: bin
+name: split-video
+---
+
+```sh
+#!/usr/bin/env php
+<?php
+if(count($argv) == 1){
+  echo "Нужно название файла!";
+  exit(1);
+}
+
+do_magic();
+
+function do_magic(){
+  check_file();
+  check_src();
+
+  split_videos();
+}
+
+
+function check_file(){
+  // todo
+}
+function check_src(){
+
+}
+
+function split_videos(){
+  foreach(videos_list() as $video){
+    if(count($video['parts']) == 1){
+
+    }
+  }
+}
+$f = file($argv[1]);
+foreach($f as $v){
+  if(trim($v)){
+    list($src, $start, $end, $out) = explode("\t", $v);
+    system(sprintf(
+      "ffmpeg -v quiet -y -i %s -vcodec copy -acodec copy -ss %s -t %s -sn %s",
+      escapeshellarg(trim($src)),
+      escapeshellarg(trim($start)),
+      escapeshellarg(trim($end)),
+      escapeshellarg(trim($out).'.mp4')
+    ));
+  }
+}
+
+```

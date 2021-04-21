@@ -1,0 +1,15 @@
+---
+layout: bin
+name: efx
+---
+
+```sh
+#!/bin/bash
+# Прогнать stdin через eslint --fix
+TMPFILE=$(mktemp)
+cat > $TMPFILE
+#prettier --stdin > $TMPFILE
+./node_modules/.bin/eslint --fix $TMPFILE > /dev/null
+cat $TMPFILE
+rm $TMPFILE
+```
