@@ -14,4 +14,10 @@ title: Алексей Камынин
   {% for s in site.s %}
     <a href="{{ s.url }}">{{ s.title }}</a><br>
   {% endfor %}
+
+  <hr>
+  <h1>скрипты</h1>
+  {% for v in site.bin %}
+    <a href="{{ v.url }}">{{ v.name }}</a><br>
+  {% endfor %}
 </div>

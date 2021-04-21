@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm _bin/*
+for f in $(find ~/.bu.bin/bin -type f | grep -v 'pyc$'); do
+  NAME=$(basename $f)
+  echo -e "---\nlayout: bin\nname: $NAME\n---\n" > _bin/$NAME.md
+  echo '```sh' >> _bin/$NAME.md
+  cat $f >> _bin/$NAME.md
+  echo '```' >> _bin/$NAME.md
+
+done

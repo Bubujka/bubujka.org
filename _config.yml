@@ -1,3 +1,5 @@
 collections:
   s:
     output: true
+  bin:
+    output: true
