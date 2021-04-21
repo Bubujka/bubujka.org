@@ -1,11 +1,95 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
-rm _bin/*
-for f in $(find ~/.bu.bin/bin -type f | grep -v 'pyc$'); do
-  NAME=$(basename $f)
-  echo -e "---\nlayout: bin\nname: $NAME\n---\n" > _bin/$NAME.md
-  echo '```' >> _bin/$NAME.md
-  cat $f >> _bin/$NAME.md
-  echo '```' >> _bin/$NAME.md
 
-done
+from sys import argv
+from os.path import expanduser, isfile, basename
+from glob import glob
+from subprocess import check_output
+
+import yaml
+
+BASE=expanduser("~/.bu.bin/bin")
+
+def haveyfm(pth):
+    t = open(pth).readlines()
+    if len(t) >= 2:
+        return '---' in t[1]
+
+
+def extractyfm(pth):
+    t = open(pth).readlines()
+    c = ""
+    for line in t[2:]:
+        if '---' in line:
+            return yaml.safe_load(c)
+        c = c + line.lstrip('#')
+
+
+def havehashbang(pth):
+    t = open(pth).readlines()
+    return '#!' in t[0]
+
+def correct_file(p):
+    if not isfile(p):
+        return False
+    if not haveyfm(p):
+        return False
+    if not havehashbang(p):
+        return False
+    if not detect_lang(p):
+        return False
+    return True
+
+def detect_lang(pth):
+    t = open(pth).readlines()
+    if 'bash' in t[0]:
+        return 'bash'
+    if 'python' in t[0]:
+        return 'python'
+    if 'php' in t[0]:
+        return 'php'
+    if 'ruby' in t[0]:
+        return 'ruby'
+    if 'node' in t[0]:
+        return 'node'
+
+
+def clear_bin():
+    try:
+        check_output("rm _bin/*", shell=True)
+    except:
+        pass
+
+def code_without_yfm(pth):
+    t = open(pth).readlines()
+    c = t[0];
+    skip = True
+    for line in t[2:]:
+        if '---' in line:
+            skip = False
+            continue
+        if not skip:
+            c = c + line
+    return c
+
+
+
+def main():
+    clear_bin()
+    for p in glob(BASE+'/*'):
+        if correct_file(p):
+            print(p)
+            t = extractyfm(p)
+            t['layout'] = 'bin'
+            t['name'] = basename(p)
+            t['lang'] = detect_lang(p)
+            yfm = yaml.dump(t, allow_unicode=True)
+            with open('_bin/{}.md'.format(basename(p)), 'w') as f:
+                f.write("---\n")
+                f.write(yfm)
+                f.write("---\n")
+                f.write("```{}\n".format(t['lang']))
+                f.write(code_without_yfm(p))
+                f.write("```")
+if __name__ == '__main__':
+    main()
