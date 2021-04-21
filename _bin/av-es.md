@@ -1,9 +1,0 @@
----
-layout: bin
-name: av-es
----
-
-```
-#!/bin/bash
-cat - | ansible-vault encrypt_string --stdin-name=$1
-```

@@ -1,9 +1,12 @@
 ---
+lang: bash
 layout: bin
 name: write-to-basecamp
+tags:
+- basecamp
+title: Записать задачу из dmenu в бэйскамп
 ---
-
-```
+```bash
 #!/bin/bash
 . ~/.bashrc
 

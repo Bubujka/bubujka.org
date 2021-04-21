@@ -1,9 +1,12 @@
 ---
+lang: bash
 layout: bin
 name: write-to-basecamp-latest-target
+tags:
+- basecamp
+title: Записать задачу из dmenu в тот же basecamp что и в прошлый раз
 ---
-
-```
+```bash
 #!/bin/bash
 . ~/.bashrc
 AGE=$(($(date +%s) - $(stat -L --format %Y ~/.puffy-latest-target)))

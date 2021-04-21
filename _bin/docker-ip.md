@@ -1,9 +1,0 @@
----
-layout: bin
-name: docker-ip
----
-
-```
-#!/bin/bash
-docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'  "$1"
-```

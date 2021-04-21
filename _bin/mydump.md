@@ -1,9 +1,0 @@
----
-layout: bin
-name: mydump
----
-
-```
-#!/bin/bash
-mysqldump $@ --no-data --compact --compatible=mysql323 |sed 's/^CREATE/\n\nCREATE/g'
-```
