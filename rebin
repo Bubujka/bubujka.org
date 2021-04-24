@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 from sys import argv
 from os.path import expanduser, isfile, basename, realpath, exists
 from glob import glob
@@ -14,25 +13,19 @@ else:
     BASE=expanduser("~/.bu.bin/bin")
 
 def haveyfm(pth):
+    """Есть ли в файле yfm"""
     t = open(pth).readlines()
     if len(t) >= 2:
         return '---' in t[1]
 
 
-def extractyfm(pth):
-    t = open(pth).readlines()
-    c = ""
-    for line in t[2:]:
-        if '---' in line:
-            return yaml.safe_load(c)
-        c = c + line.lstrip('#')
-
-
 def havehashbang(pth):
+    """Является ли файл исполняемым скриптом"""
     t = open(pth).readlines()
     return '#!' in t[0]
 
 def correct_file(p):
+    """Проверить файл на корректность перед публикацией"""
     if not isfile(p):
         return False
     if not haveyfm(p):
@@ -44,6 +37,7 @@ def correct_file(p):
     return True
 
 def detect_lang(pth):
+    """Определить язык файла"""
     t = open(pth).readlines()
     if 'bash' in t[0]:
         return 'bash'
@@ -56,14 +50,24 @@ def detect_lang(pth):
     if 'node' in t[0]:
         return 'node'
 
-
 def clear_bin():
+    """Зачистить от старых страниц папку"""
     try:
         check_output("rm _bin/*", shell=True)
     except:
         pass
 
+def extractyfm(pth):
+    """Достать yfm из файла"""
+    t = open(pth).readlines()
+    c = ""
+    for line in t[2:]:
+        if '---' in line:
+            return yaml.safe_load(c)
+        c = c + line.lstrip('#')
+
 def code_without_yfm(pth):
+    """Достать код файла без yfm"""
     t = open(pth).readlines()
     c = t[0];
     skip = True
@@ -75,7 +79,19 @@ def code_without_yfm(pth):
             c = c + line
     return c
 
+def dumpyfm(data):
+    """Сериализовать объект в yaml """
+    return yaml.dump(data, allow_unicode=True, default_flow_style=False)
 
+def save_as_page(p, t):
+    """Сохранить как страницу для сайта"""
+    with open('_bin/{}.md'.format(basename(p)), 'w') as f:
+        f.write("---\n")
+        f.write(dumpyfm(t))
+        f.write("---\n")
+        f.write("```{}\n".format(t['lang']))
+        f.write(code_without_yfm(p))
+        f.write("```")
 
 def main():
     clear_bin()
@@ -86,13 +102,7 @@ def main():
             t['layout'] = 'bin'
             t['name'] = basename(p)
             t['lang'] = detect_lang(p)
-            yfm = yaml.dump(t, allow_unicode=True, default_flow_style=False)
-            with open('_bin/{}.md'.format(basename(p)), 'w') as f:
-                f.write("---\n")
-                f.write(yfm)
-                f.write("---\n")
-                f.write("```{}\n".format(t['lang']))
-                f.write(code_without_yfm(p))
-                f.write("```")
+            save_as_page(p, t)
+
 if __name__ == '__main__':
     main()
