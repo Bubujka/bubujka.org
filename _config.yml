@@ -1,4 +1,5 @@
 highlighter: kramdown
+excerpt_separator: '====='
 kramdown:
   syntax_highlighter_opts:
     disable : true
