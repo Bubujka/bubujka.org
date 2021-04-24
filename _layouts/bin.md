@@ -2,7 +2,7 @@
 <html>
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Скрипты → {{ page.name }}</title>
+   <title>Скрипты → {{ page.name }} → {{ page.title }}</title>
    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -45,9 +45,7 @@
   </script>
   <div id="post" class='post'>
     <h1>Скрипты {{ page.name }}</h1>
-    {% for tag in page.tags %}
-      #{{tag}}
-    {% endfor %}
+    {% include tags.html obj=page %}
     <div class='hr'></div>
     <p>
       {{page.title}}
