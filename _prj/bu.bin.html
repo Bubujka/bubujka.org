@@ -1,0 +1,36 @@
+---
+title: Консольные скрипты
+---
+<style>
+table {
+  border-collapse: collapse
+}
+table td, table th{
+  padding: 3px 10px;
+}
+.empty{
+  background: rgba(255,0,0,0.1)
+}
+</style>
+
+<h2>Прогресс по документированию моих скриптов</h2>
+
+<table border=1>
+  <tr>
+    <th>Название</th>
+    <th>Добавил описание</th>
+    <th>Добавил тэги</th>
+    <th>Добавил ссылки</th>
+  </tr>
+  {% for v in site.data.bu_bin %}
+    <tr>
+      <td>
+        {{ v.name }}
+      </td>
+      {% if v.title %}<td>{{ v.title }}</td>{% else %}<td class='empty' />{% endif %}
+      {% if v.tags %}<td>{{ v.tags }}</td>{% else %}<td class='empty' />{% endif %}
+      {% if v.refs %}<td>{{ v.refs }}</td>{% else %}<td class='empty' />{% endif %}
+    </tr>
+  {% endfor %}
+</table>
+

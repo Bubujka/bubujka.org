@@ -7,3 +7,13 @@ collections:
     output: true
   bin:
     output: true
+  prj:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "prj"
+    values:
+      layout: "default"
