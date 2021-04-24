@@ -61,10 +61,14 @@ def extractyfm(pth):
     """Достать yfm из файла"""
     t = open(pth).readlines()
     c = ""
+    syntax = detect_lang(pth)
     for line in t[2:]:
         if '---' in line:
             return yaml.safe_load(c)
-        c = c + line.lstrip('#')
+        if syntax is 'node':
+            c = c + line.lstrip('/')
+        else:
+            c = c + line.lstrip('#')
 
 def code_without_yfm(pth):
     """Достать код файла без yfm"""
