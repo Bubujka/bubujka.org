@@ -1,8 +1,7 @@
 ---
 title:
 layout: post
-tags:
-  - stream
+category: video
 ---
 
 <a href='https://www.youtube.com/watch?v=__0F5NNgLDU'>
