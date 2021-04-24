@@ -6,6 +6,7 @@ tags:
 - basecamp
 title: Записать задачу из dmenu в тот же basecamp что и в прошлый раз
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 . ~/.bashrc
@@ -32,3 +33,4 @@ puffy create "$TARGET" "$TEXT"
 echo "Writed" | dzen2-wrapper green
 
 ```
+{% endraw %}

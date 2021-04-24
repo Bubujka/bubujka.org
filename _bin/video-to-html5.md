@@ -4,6 +4,7 @@ layout: bin
 name: video-to-html5
 title: Сконвертировать видео в mp4,webm,ogv
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 if [ "$#" -eq 0 ]; then
@@ -32,3 +33,4 @@ do
   ffmpeg -i "${file}"  $options -acodec aac -strict experimental -movflags frag_keyframe+empty_moov -vcodec libx264 -vf format=yuv420p -preset slow "${DIR}/${file}.mp4" &
 done
 ```
+{% endraw %}

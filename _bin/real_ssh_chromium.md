@@ -4,6 +4,7 @@ layout: bin
 name: real_ssh_chromium
 title: Запустить хром через socks5 туннель
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 . ~/.bashrc
@@ -16,3 +17,4 @@ chromium-browser \
   --proxy-bypass-list="$(cat ~/.db/wiki/noproxy.md)" \
 i3-workspace www
 ```
+{% endraw %}

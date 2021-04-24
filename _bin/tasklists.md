@@ -4,6 +4,7 @@ layout: bin
 name: tasklists
 title: Список моих списков задач в бэйскампе
 ---
+{% raw %}
 ```node
 #!/usr/bin/env node
 var fs = require('fs');
@@ -75,3 +76,4 @@ dmenu(targets, "Какой проект выбираем:", 30, function(tkey, t
   });
 });
 ```
+{% endraw %}

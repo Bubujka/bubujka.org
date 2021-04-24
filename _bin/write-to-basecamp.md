@@ -6,6 +6,7 @@ tags:
 - basecamp
 title: Записать задачу из dmenu в бэйскамп
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 . ~/.bashrc
@@ -24,3 +25,4 @@ fi
 puffy create "$TARGET" "$TEXT"
 echo "Writed" | dzen2-wrapper green
 ```
+{% endraw %}

@@ -4,6 +4,7 @@ layout: bin
 name: write-to-plan
 title: Записать через dmenu в
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 . ~/.bashrc
@@ -17,3 +18,4 @@ add_to_unsorted_section.py "- $TARGET  ($(date '+%B %e'))" $PTH
 
 echo "Writed" | dzen2-wrapper green
 ```
+{% endraw %}

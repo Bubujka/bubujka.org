@@ -4,6 +4,7 @@ layout: bin
 name: add-watermark
 title: Добавить надпись-watermark картинкам
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 COPY="$1"
@@ -15,3 +16,4 @@ do
   convert -resize 1000x1000 -quality 85 -fill white  -undercolor '#00000080' -gravity SouthEast -annotate +3+3 " $COPY " $file watermark/$file
 done
 ```
+{% endraw %}

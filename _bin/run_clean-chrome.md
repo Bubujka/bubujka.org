@@ -4,6 +4,7 @@ layout: bin
 name: run_clean-chrome
 title: Запустить хром через socks5 туннель
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 . ~/.bashrc
@@ -19,3 +20,4 @@ chromium-browser \
 
 i3-workspace www
 ```
+{% endraw %}

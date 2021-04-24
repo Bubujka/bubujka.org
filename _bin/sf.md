@@ -4,6 +4,7 @@ layout: bin
 name: sf
 title: Сохранить файлы в хранилище файлов
 ---
+{% raw %}
 ```python
 #!/usr/bin/env python3
 from subprocess import check_output
@@ -49,3 +50,4 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+{% endraw %}

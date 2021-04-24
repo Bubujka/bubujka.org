@@ -4,6 +4,7 @@ layout: bin
 name: select-list-file
 title: Выбрать через dmenu один из списков
 ---
+{% raw %}
 ```ruby
 #!/usr/bin/env ruby
 prefix = '/home/bubujka/.db/lists/'
@@ -22,3 +23,4 @@ unless wiki_file.empty?
   system "i3-workspace vim"
 end
 ```
+{% endraw %}

@@ -4,6 +4,7 @@ layout: bin
 name: scy
 title: Запись видео с экрана
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 export VIDEO_RECORDING_RESOLUTION='1600x900' # у меня такой экран
@@ -162,3 +163,4 @@ case "$1" in
 esac
 # vim: tabstop=4:softtabstop=4:shiftwidth=4:noexpandtab
 ```
+{% endraw %}

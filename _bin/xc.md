@@ -7,6 +7,7 @@ tags:
 - linux
 title: Скопировать stdin или переданный аргумент в буфер обмена
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 if [ $# -eq 0 ]; then
@@ -17,3 +18,4 @@ else
   xclip -o | xclip -selection cli
 fi
 ```
+{% endraw %}

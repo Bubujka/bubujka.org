@@ -4,6 +4,7 @@ layout: bin
 name: writ-to-tw
 title: Записать через dmenu в taskwarrior
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 . ~/.bashrc
@@ -15,3 +16,4 @@ fi
 task add $TARGET
 echo "Writed" | dzen2-wrapper green
 ```
+{% endraw %}

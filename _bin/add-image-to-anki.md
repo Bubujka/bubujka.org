@@ -4,6 +4,7 @@ layout: bin
 name: add-image-to-anki
 title: Добавить изображение в anki
 ---
+{% raw %}
 ```bash
 #!/bin/bash
 if [ "$(hostname)" == "titty" ] ;
@@ -27,3 +28,4 @@ else
   xdotool click 1
 fi
 ```
+{% endraw %}
