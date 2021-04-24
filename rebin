@@ -15,9 +15,11 @@ else:
 def haveyfm(pth):
     """Есть ли в файле yfm"""
     t = open(pth).readlines()
+    syntax = detect_lang(pth)
+    if syntax is 'php':
+        return '---' in t[2]
     if len(t) >= 2:
         return '---' in t[1]
-
 
 def havehashbang(pth):
     """Является ли файл исполняемым скриптом"""
@@ -62,7 +64,10 @@ def extractyfm(pth):
     t = open(pth).readlines()
     c = ""
     syntax = detect_lang(pth)
-    for line in t[2:]:
+    startline = 2
+    if syntax is 'php':
+        startline = 3
+    for line in t[startline:]:
         if '---' in line:
             return yaml.safe_load(c)
         if syntax is 'node':
@@ -75,7 +80,12 @@ def code_without_yfm(pth):
     t = open(pth).readlines()
     c = t[0];
     skip = True
-    for line in t[2:]:
+    syntax = detect_lang(pth)
+    startline = 2
+    if syntax is 'php':
+        c = c + t[1]
+        startline = 3
+    for line in t[startline:]:
         if '---' in line:
             skip = False
             continue
