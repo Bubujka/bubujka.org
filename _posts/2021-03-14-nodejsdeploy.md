@@ -2,12 +2,9 @@
 title:
 layout: post
 category: video
+videos:
+ - '__0F5NNgLDU'
 ---
-
-<a href='https://www.youtube.com/watch?v=__0F5NNgLDU'>
-<img src='/images/2021-03-14_15-21-00_MdxLntbNg1EJaEo6sFs59jhtCMNuOM.jpg'>
-https://www.youtube.com/watch?v=__0F5NNgLDU
-</a>
 
 # Разворачивание js-приложения на сервере
 

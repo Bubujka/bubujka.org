@@ -1,12 +1,24 @@
 ---
 layout: default
 ---
+
+
+
 <div id="post" class='post'>
   <h1>{{ page.title }}</h1>
-  {% for tag in page.tags %}
-    {{tag}}
-  {% endfor %}
+  {% include tags.html obj=page %}
   <div class='hr'></div>
+
+{% for v in page.videos %}
+  <iframe width="700"
+          height="395"
+          src="https://www.youtube.com/embed/{{v}}"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+{% endfor %}
+
   {{ content }}
 </div>
 
