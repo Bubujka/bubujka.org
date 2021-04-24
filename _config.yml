@@ -17,3 +17,4 @@ defaults:
       type: "prj"
     values:
       layout: "default"
+      comments: true

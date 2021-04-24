@@ -16,7 +16,14 @@
     <a href="/">Все записи</a>
   </div>
 
-  {{ content }}
+  <div class="post">
+    {{ content }}
+  </div>
+
+  {% if page.comments %}
+    {% include comments.html %}
+  {% endif %}
+
 </div>
 </body>
 </html>
