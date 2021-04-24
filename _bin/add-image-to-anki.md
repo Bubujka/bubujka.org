@@ -2,6 +2,10 @@
 lang: bash
 layout: bin
 name: add-image-to-anki
+refs: []
+tags:
+- anki
+- xdotool
 title: Добавить изображение в anki
 ---
 {% raw %}

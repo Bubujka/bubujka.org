@@ -2,6 +2,9 @@
 lang: bash
 layout: bin
 name: add-watermark
+refs: []
+tags:
+- imagemagick
 title: Добавить надпись-watermark картинкам
 ---
 {% raw %}
