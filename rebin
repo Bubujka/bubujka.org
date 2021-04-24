@@ -102,10 +102,10 @@ def save_as_page(p, t):
     with open('_bin/{}.md'.format(basename(p)), 'w') as f:
         f.write("---\n")
         f.write(dumpyfm(t))
-        f.write("---\n")
+        f.write("---\n{% raw %}\n")
         f.write("```{}\n".format(t['lang']))
         f.write(code_without_yfm(p))
-        f.write("```")
+        f.write("```\n{% endraw %}")
 
 def main():
     clear_bin()
