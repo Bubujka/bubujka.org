@@ -62,5 +62,6 @@
   <script>hljs.highlightAll();</script>
 
 </div>
+{% include metrika.html %}
 </body>
 </html>
