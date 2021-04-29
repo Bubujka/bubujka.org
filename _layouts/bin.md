@@ -5,7 +5,7 @@
    <title>Скрипты → {{ page.name }} → {{ page.title }}</title>
    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-   <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+   <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"
         href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
