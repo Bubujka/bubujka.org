@@ -2,6 +2,10 @@
 lang: bash
 layout: bin
 name: write-to-basecamp-my-target
+refs:
+- dzen2-wrapper
+- puffy
+- dmenu-wrapper
 tags:
 - basecamp
 title: Записать задачу из dmenu в личный basecamp

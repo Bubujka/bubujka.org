@@ -2,7 +2,8 @@
 lang: bash
 layout: bin
 name: br
-refs: []
+refs:
+- i3-workspace
 tags:
 - browser
 title: Открыть ссылку в браузере
