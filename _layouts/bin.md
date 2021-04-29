@@ -55,6 +55,7 @@
     <br>
     <br>
     <button class='noforum' onclick="copyToClipboard()">Скопировать в буфер обмена</button>
+    <a href="https://github.com/Bubujka/bu.bin/blob/master/bin/{{page.name}}">Посмотреть на github</a>
     <div id='notify'></div>
   </div>
 
