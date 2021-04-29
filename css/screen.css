@@ -34,3 +34,12 @@ h1, h2, h3, h4, h5, .footer, .title{
 body {
   font-size: 1.5em;
 }
+.hljs{
+  padding: 10px 20px;
+  background: #FEFBF3;
+  border: 1px solid rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  border-radius: 3px;
+}
