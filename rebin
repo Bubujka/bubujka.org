@@ -50,7 +50,7 @@ def detect_lang(pth):
     if 'ruby' in t[0]:
         return 'ruby'
     if 'node' in t[0]:
-        return 'node'
+        return 'js'
 
 def clear_bin():
     """Зачистить от старых страниц папку"""
@@ -70,7 +70,7 @@ def extractyfm(pth):
     for line in t[startline:]:
         if '---' in line:
             return yaml.safe_load(c)
-        if syntax is 'node':
+        if syntax is 'js':
             c = c + line.lstrip('/')
         else:
             c = c + line.lstrip('#')

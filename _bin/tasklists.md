@@ -1,11 +1,11 @@
 ---
-lang: node
+lang: js
 layout: bin
 name: tasklists
 title: Список моих списков задач в бэйскампе
 ---
 {% raw %}
-```node
+```js
 #!/usr/bin/env node
 var fs = require('fs');
 var yaml = require('js-yaml');
