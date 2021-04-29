@@ -2,6 +2,9 @@
 lang: bash
 layout: bin
 name: real_ssh_chromium
+refs:
+- k9
+- i3-workspace
 title: Запустить хром через socks5 туннель
 ---
 {% raw %}

@@ -1,8 +1,12 @@
 ---
 layout: default
 ---
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+
 <style>
-pre.highlight{
+.hljs{
   padding: 10px 20px;
   background: #FEFBF3;
   border: 1px solid rgba(0,0,0,.2);
@@ -10,8 +14,6 @@ pre.highlight{
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
   border-radius: 3px;
-  overflow-x: scroll;
-
 }
 </style>
 <script>
@@ -40,3 +42,4 @@ const copyToClipboard = function(){
   <button onclick="copyToClipboard()">Скопировать в буфер обмена</button>
   <div id='notify'></div>
 </div>
+<script>hljs.highlightAll();</script>

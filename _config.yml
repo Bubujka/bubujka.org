@@ -9,7 +9,7 @@ plugins:
   - jekyll-sitemap
 
 collections:
-  s:
+  snippet:
     output: true
   bin:
     output: true
@@ -23,4 +23,11 @@ defaults:
       type: "prj"
     values:
       layout: "default"
+      comments: true
+  -
+    scope:
+      path: ""
+      type: "snippet"
+    values:
+      layout: "snippet"
       comments: true

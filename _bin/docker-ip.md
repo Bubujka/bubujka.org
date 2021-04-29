@@ -2,6 +2,8 @@
 lang: bash
 layout: bin
 name: docker-ip
+tags:
+- docker
 title: Получить ip адрес у докер контейнера
 ---
 {% raw %}
