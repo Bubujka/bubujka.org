@@ -2,6 +2,8 @@
 lang: bash
 layout: bin
 name: pys
+rews:
+- br
 title: Запустить по-быстрому simple-http-server
 ---
 {% raw %}
