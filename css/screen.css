@@ -5,11 +5,11 @@
   position: relative;
 }
 .site{
-  max-width: 700px;
+  max-width: 900px;
   position:relative;
   margin: 0 auto;
 }
-.hr{
+hr{
   margin: 10px 0px;
   border-bottom: 1px dashed #aaa;
   font-size: 1px;
@@ -29,4 +29,8 @@ h1, h2, h3, h4, h5, .footer, .title{
 
 .tags{
   text-shadow:  0 0 1em blue;
+}
+
+body {
+  font-size: 1.5em;
 }
