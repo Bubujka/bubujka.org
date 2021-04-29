@@ -19,3 +19,10 @@ defaults:
     values:
       layout: "default"
       comments: true
+  -
+    scope:
+      path: ""
+      type: "s"
+    values:
+      layout: "snippet"
+      comments: true
