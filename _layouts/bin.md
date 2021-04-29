@@ -46,6 +46,10 @@
   <div id="post" class='post'>
     <h1>Скрипты {{ page.name }}</h1>
     {% include tags.html obj=page %}
+    <br>
+    {% for ref in page.refs %}
+      <a href="/bin/{{ref}}.html">{{ref}}</a>
+    {% endfor %}
     <div class='hr'></div>
     <p>
       {{page.title}}
