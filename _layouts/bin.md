@@ -10,6 +10,9 @@
   <div class="title">
     <a href="/">Все записи</a>
   </div>
+
+  {% include header-ad.html %}
+
   <script>
   const copyToClipboard = function(){
     const el = document.createElement('textarea');
