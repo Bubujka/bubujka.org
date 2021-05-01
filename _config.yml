@@ -3,6 +3,11 @@ excerpt_separator: '====='
 kramdown:
   syntax_highlighter_opts:
     disable : true
+
+url: "https://bubujka.org"
+plugins:
+  - jekyll-sitemap
+
 collections:
   snippet:
     output: true
