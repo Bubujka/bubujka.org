@@ -3,7 +3,11 @@
 <div>
   Технологии:
   {% for t in include.obj.tech %}
-  <a href='/tech/{{t}}.html'>{{t}}</a>
+    {% for v in site.tech %}
+      {% if t == v.name %}
+        <a href='/tech/{{t}}.html'>{{v.title}}</a>
+      {% endif %}
+    {% endfor %}
   {% endfor %}
 </div>
 {% endif %}
