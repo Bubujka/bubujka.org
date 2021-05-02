@@ -31,15 +31,13 @@
     <h1>Скрипты {{ page.name }}</h1>
     {% include tags.html obj=page %}
     <br>
-    {% for ref in page.refs %}
-      <a href="/bin/{{ref}}.html">{{ref}}</a>
-    {% endfor %}
     <div class='hr'></div>
     <p>
       {{page.title}}
     </p>
 
     {{ content }}
+
     <div class="noforum">
       <br>
       <br>
@@ -47,6 +45,22 @@
       <a href="https://github.com/Bubujka/bu.bin/blob/master/bin/{{page.name}}">Посмотреть на github</a>
       <div id='notify'></div>
     </div>
+
+    {% assign refssize = page.refs | size %}
+    {% if refssize != 0 %}
+      <h2>Используемые команды</h2>
+      <ul>
+        {% for ref in page.refs %}
+          {% for v in site.bin %}
+            {% if v.name == ref %}
+              <li>
+                <a href="/bin/{{ref}}.html">{{ref}}</a> - {{v.title}} {% include tags.html obj=v %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 
   {% include comments.html %}
