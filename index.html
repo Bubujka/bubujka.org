@@ -8,21 +8,21 @@ title: Алексей Камынин
     <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
   {% endfor %}
 
-  <hr>
+  <div class="hr"></div>
 
   <h1>Сниппеты</h1>
   {% for s in site.snippet %}
     <a href="{{ s.url }}">{{ s.title }}</a><br>
   {% endfor %}
 
-  <hr>
+  <div class="hr"></div>
 
   <h1>Проекты</h1>
   {% for p in site.prj %}
     <a href="{{ p.url }}">{{ p.title }}</a><br>
   {% endfor %}
 
-  <hr>
+  <div class="hr"></div>
   <h1>Скрипты</h1>
   Забрать всё вместе, разом, с github:
   <a href="https://github.com/bubujka/bu.bin">https://github.com/bubujka/bu.bin</a>

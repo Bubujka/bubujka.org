@@ -5,7 +5,6 @@ title_format: bin
 <div id="post" class='post'>
   <h1>Скрипты {{ page.name }}</h1>
   {% include tags.html obj=page %}
-  <br>
   <div class='hr'></div>
   <p>
     {{page.title}}
