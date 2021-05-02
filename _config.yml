@@ -29,7 +29,7 @@ defaults:
       path: ""
       type: "tech"
     values:
-      layout: "default"
+      layout: "tech"
       comments: true
   - scope:
       path: ""
