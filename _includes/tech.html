@@ -1,0 +1,9 @@
+{% assign techsize = include.obj.tech | size %}
+{% if techsize != 0 %}
+<div>
+  Технологии:
+  {% for t in include.obj.tech %}
+  <a href='/tech/{{t}}.html'>{{t}}</a>
+  {% endfor %}
+</div>
+{% endif %}

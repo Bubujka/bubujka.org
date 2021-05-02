@@ -5,6 +5,8 @@ category: stream
 project: bubujka.org
 videos:
   - npuPsRf7tg0
+  - FwfsjRF5R8Q
+tech: [jekyll]
 ---
 
 

@@ -10,6 +10,13 @@ title: Алексей Камынин
 
   <div class="hr"></div>
 
+  <h1>Технологии</h1>
+  <p>Что я использую у себя в работе</p>
+  {% for s in site.tech %}
+    <a href="{{ s.url }}">{{ s.title }}</a><br>
+  {% endfor %}
+
+  <div class="hr"></div>
   <h1>Сниппеты</h1>
   {% for s in site.snippet %}
     <a href="{{ s.url }}">{{ s.title }}</a><br>
