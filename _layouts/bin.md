@@ -39,11 +39,12 @@
     {{ content }}
 
     <div class="noforum">
-      <br>
-      <br>
-      <button onclick="copyToClipboard()">Скопировать в буфер обмена</button>
-      <a href="https://github.com/Bubujka/bu.bin/blob/master/bin/{{page.name}}">Посмотреть на github</a>
-      <div id='notify'></div>
+      <div class="right">
+        {% include copy-button.html %}
+      </div>
+      <div class="right">
+        <a class='' href="https://github.com/Bubujka/bu.bin/blob/master/bin/{{page.name}}">Посмотреть на github</a>
+      </div>
     </div>
 
     {% assign refssize = page.refs | size %}

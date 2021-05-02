@@ -37,9 +37,9 @@ const copyToClipboard = function(){
   {% endfor %}
   <div class='hr'></div>
   {{ content }}
-  <br>
-  <br>
-  <button onclick="copyToClipboard()">Скопировать в буфер обмена</button>
+  <div class="right">
+    {% include copy-button.html %}
+  </div>
   <div id='notify'></div>
 </div>
 <script>hljs.highlightAll();</script>
