@@ -1,8 +1,23 @@
 <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
 <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="/css/button.css" type="text/css" media="screen, projection" />
+
+<script>
+const copyToClipboard = function(){
+  const el = document.createElement('textarea');
+  el.value = document.querySelector("code").textContent;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+  document.querySelector('#notify').innerHTML = 'Скопировано';
+  setTimeout(function(){
+    document.querySelector('#notify').innerHTML = '';
+  }, 2000);
+};
+</script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />

@@ -1,11 +1,13 @@
+---
+title_format: default
+---
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }}</title>
+    <title>{% include title_formats/{{layout.title_format}}.html %}</title>
     {% include afterhead.html %}
 </head>
 <body>
-
 <div class="site">
   <div class="title">
     <a href="/">Все записи</a>

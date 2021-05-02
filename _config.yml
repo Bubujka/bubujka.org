@@ -17,15 +17,13 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "prj"
     values:
       layout: "default"
       comments: true
-  -
-    scope:
+  - scope:
       path: ""
       type: "snippet"
     values:
