@@ -30,8 +30,7 @@ title: Алексей Камынин
   <ul>
     {% for v in site.bin %}
       <li>
-        <a href="{{ v.url }}">{{ v.name }}</a> - {{ v.title }}
-        {% include tags.html obj=v %}
+        {% include bin-link.html obj=v %}
       </li>
     {% endfor %}
   </ul>

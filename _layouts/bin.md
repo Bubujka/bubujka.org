@@ -54,7 +54,7 @@
           {% for v in site.bin %}
             {% if v.name == ref %}
               <li>
-                <a href="/bin/{{ref}}.html">{{ref}}</a> - {{v.title}} {% include tags.html obj=v %}
+                {% include bin-link.html obj=v %}
               </li>
             {% endif %}
           {% endfor %}
