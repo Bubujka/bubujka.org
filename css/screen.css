@@ -56,3 +56,14 @@ body {
   height: 30px;
 
 }
+
+
+table.backlog-table {
+  border-collapse: collapse;
+}
+
+.backlog-table td{
+  border: 1px solid black;
+  width: 50%;
+  vertical-align: top;
+}

@@ -1,0 +1,27 @@
+{% if page.backlog or page.done %}
+  <table class='backlog-table'>
+    <tr>
+      <th>Предстоит сделать</th>
+      <th>Сделано</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          {% for t in page.backlog %}
+            <li>{{t}}</li>
+          {% endfor %}
+        </ul>
+      </td>
+      <td>
+          {% for pair in page.done %}
+            <h3>{{pair[0]}}</h3>
+            <ul>
+              {% for t in pair[1] %}
+                <li>{{t}}</li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+      </td>
+    </tr>
+  </table>
+{% endif %}

@@ -23,7 +23,7 @@ defaults:
       path: ""
       type: "prj"
     values:
-      layout: "default"
+      layout: "prj"
       comments: true
   - scope:
       path: ""
