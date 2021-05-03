@@ -1,0 +1,7 @@
+{% if include.obj.project %}
+  {% for p in site.prj %}
+    {% if p.name == include.obj.project %}
+      Проект: <a href="{{ p.url }}">{{ p.title }}</a>
+    {% endif %}
+  {% endfor %}
+{% endif %}
