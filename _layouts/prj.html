@@ -3,6 +3,9 @@ layout: default
 ---
 <div id="post" class='post'>
   <h1>Проект {{ page.name }}</h1>
+  {% if page.started %}
+  Дата начала проекта: {{page.started}}
+  {% endif %}
   <div class='hr'></div>
   {{ content }}
   {% include backlog-table.html %}
