@@ -1,6 +1,7 @@
 ---
 title: Сайт najomi.org
 name: najomi.org
+started: 2015-07-26
 ---
 
 # Backlog
