@@ -20,7 +20,14 @@ pre>code{
 }
 
 .title{
+  position: relative;
   text-align: right;
+}
+
+.logo{
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 #post img{
