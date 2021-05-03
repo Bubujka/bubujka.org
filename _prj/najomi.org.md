@@ -1,5 +1,6 @@
 ---
 title: Сайт najomi.org
+name: najomi.org
 ---
 
 # Backlog

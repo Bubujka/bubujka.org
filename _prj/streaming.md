@@ -1,5 +1,6 @@
 ---
 title: Стриминг
+name: streaming
 ---
 
 # Backlog
