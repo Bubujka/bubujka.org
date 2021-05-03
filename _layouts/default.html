@@ -10,23 +10,7 @@ title_format: default
 <body>
 <div class="site">
   <div class="title">
-    <a href="/">На главную</a>
-    <br>
-
-    <a href="/#posts">Записи</a> /
-    <a href="/#tech">Технологии</a> /
-    <a href="/#snippets">Сниппеты</a> /
-    <a href="/#projects">Проекты</a> /
-    <a href="/#bin">Скрипты</a>
-    <br>
-
-    <a href="https://forum.bubujka.org">Форум</a>
-
-    <br>
-
-    <a href="https://github.com/bubujka">Github</a>
-    /
-    <a href="https://y.bubujka.org">Youtube</a>
+    {% include menu.html %}
   </div>
 
   {% include header-ad.html %}
@@ -42,7 +26,8 @@ title_format: default
   <div class="footer">
     <div class="hr"></div>
     <div class="right">
-        <a href="/copy.html">Благодарности <img src='/images/ico/heart.png'></a>
+      <a href="/copy.html">Благодарности <img src='/images/ico/heart.png'></a><br>
+      {% include menu.html %}
     </div>
   </div>
 </div>
