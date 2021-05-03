@@ -67,3 +67,7 @@ table.backlog-table {
   width: 50%;
   vertical-align: top;
 }
+
+.backlog-length, .done-length {
+  font-size: 30px;
+}
