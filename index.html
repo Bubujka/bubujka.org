@@ -12,22 +12,34 @@ title: Алексей Камынин
 
   <h1>Технологии</h1>
   <p>Что я использую у себя в работе</p>
-  {% for s in site.tech %}
-    <a href="{{ s.url }}">{{ s.title }}</a> - {{s.description}}<br>
-  {% endfor %}
+  <ul>
+    {% for s in site.tech %}
+      <li>
+        <a href="{{ s.url }}">{{ s.title }}</a> - {{s.description}}<br>
+      </li>
+    {% endfor %}
+  </ul>
 
   <div class="hr"></div>
   <h1>Сниппеты</h1>
-  {% for s in site.snippet %}
-    <a href="{{ s.url }}">{{ s.title }}</a><br>
-  {% endfor %}
+  <ul>
+    {% for s in site.snippet %}
+      <li>
+        <a href="{{ s.url }}">{{ s.title }}</a><br>
+      </li>
+    {% endfor %}
+  </ul>
 
   <div class="hr"></div>
 
   <h1>Проекты</h1>
-  {% for p in site.prj %}
-    <a href="{{ p.url }}">{{ p.title }}</a><br>
-  {% endfor %}
+  <ul>
+    {% for p in site.prj %}
+      <li>
+        {{p.name}} - <a href="{{ p.url }}">{{ p.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
   <div class="hr"></div>
   <h1>Скрипты</h1>
