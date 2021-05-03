@@ -5,7 +5,6 @@ category: video
 videos:
  - '__0F5NNgLDU'
 tech: [nodejs, ubuntu, pm2]
-
 ---
 
 # Разворачивание js-приложения на сервере

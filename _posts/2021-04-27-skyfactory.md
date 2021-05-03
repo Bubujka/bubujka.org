@@ -2,7 +2,7 @@
 title: Прохождение minecraft skyfactory4 - день второй
 layout: post
 category: stream
-tags: [skyfactory4]
+project: skyfactory4
 videos:
   - 5o_psGYQPFE
 ---
