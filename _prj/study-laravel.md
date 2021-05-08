@@ -1,0 +1,89 @@
+---
+title: Изучение laravel
+name: study-laravel
+started: 2021-05-08
+backlog:
+  - Architecture Concepts → Service Container
+  - Architecture Concepts → Service Providers
+  - Architecture Concepts → Facades
+  - The Basics → Routing
+  - The Basics → Middleware
+  - The Basics → CSRF Protection
+  - The Basics → Controllers
+  - The Basics → Requests
+  - The Basics → Responses
+  - The Basics → Views
+  - The Basics → Blade Templates
+  - The Basics → URL Generation
+  - The Basics → Session
+  - The Basics → Validation
+  - The Basics → Error Handling
+  - The Basics → Logging
+  - Digging Deeper → Artisan Console
+  - Digging Deeper → Broadcasting
+  - Digging Deeper → Cache
+  - Digging Deeper → Collections
+  - Digging Deeper → Compiling Assets
+  - Digging Deeper → Contracts
+  - Digging Deeper → Events
+  - Digging Deeper → File Storage
+  - Digging Deeper → Helpers
+  - Digging Deeper → HTTP Client
+  - Digging Deeper → Localization
+  - Digging Deeper → Mail
+  - Digging Deeper → Notifications
+  - Digging Deeper → Package Development
+  - Digging Deeper → Queues
+  - Digging Deeper → Task Scheduling
+  - Security → Authentication
+  - Security → Authorization
+  - Security → Email Verification
+  - Security → Encryption
+  - Security → Hashing
+  - Security → Password Reset
+  - Database → Getting Started
+  - Database → Query Builder
+  - Database → Pagination
+  - Database → Migrations
+  - Database → Seeding
+  - Database → Redis
+  - Eloquent ORM → Getting Started
+  - Eloquent ORM → Relationships
+  - Eloquent ORM → Collections
+  - Eloquent ORM → Mutators / Casts
+  - Eloquent ORM → API Resources
+  - Eloquent ORM → Serialization
+  - Testing → Getting Started
+  - Testing → HTTP Tests
+  - Testing → Console Tests
+  - Testing → Browser Tests
+  - Testing → Database
+  - Testing → Mocking
+  - Packages → Breeze
+  - Packages → Cashier (Stripe)
+  - Packages → Cashier (Paddle)
+  - Packages → Dusk
+  - Packages → Envoy
+  - Packages → Fortify
+  - Packages → Homestead
+  - Packages → Horizon
+  - Packages → Jetstream
+  - Packages → Passport
+  - Packages → Sail
+  - Packages → Sanctum
+  - Packages → Scout
+  - Packages → Socialite
+  - Packages → Telescope
+  - Packages → Valet
+done:
+  2021-05-08:
+    - Prologue → Release Notes
+    - Prologue → Upgrade Guide
+    - Prologue → Contribution Guide
+    - Getting Started → Installation
+    - Getting Started → Configuration
+    - Getting Started → Directory Structure
+    - Getting Started → Starter Kits
+    - Getting Started → Deployment
+    - Architecture Concepts → Request Lifecycle
+---

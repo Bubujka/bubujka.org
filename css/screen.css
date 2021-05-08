@@ -67,6 +67,7 @@ body {
 
 table.backlog-table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 .backlog-table td{
