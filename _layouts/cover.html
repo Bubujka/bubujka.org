@@ -18,6 +18,16 @@
   color: {{page.secondary}}
 }
 
+{% if page.h1_size %}
+.text .h1{ font-size: {{page.h1_size}}; }
+{% endif %}
+{% if page.h2_size %}
+.text .h2{ font-size: {{page.h2_size}}; }
+{% endif %}
+{% if page.h3_size %}
+.text .h3{ font-size: {{page.h3_size}}; }
+{% endif %}
+
 </style>
 
 </head>
