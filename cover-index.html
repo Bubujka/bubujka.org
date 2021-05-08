@@ -8,7 +8,7 @@ title: Мои обложки
 <ul>
   {% for p in site.cover %}
     <li>
-      <a href="{{ p.url }}">{{ p.h1 }} - {{ p.h2}}</a>
+      {{ p.path }} <a href="{{ p.url }}">{{ p.h1 }} - {{ p.h2}}</a>
     </li>
   {% endfor %}
 </ul>
