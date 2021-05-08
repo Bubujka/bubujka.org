@@ -1,0 +1,14 @@
+---
+layout: default
+title: Мои обложки
+---
+
+<a name="projects"></a>
+<h1>Обложки</h1>
+<ul>
+  {% for p in site.cover %}
+    <li>
+      <a href="{{ p.url }}">{{ p.h1 }} - {{ p.h2}}</a>
+    </li>
+  {% endfor %}
+</ul>

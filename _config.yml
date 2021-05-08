@@ -17,6 +17,8 @@ collections:
     output: true
   tech:
     output: true
+  cover:
+    output: true
 
 defaults:
   - scope:
@@ -37,4 +39,10 @@ defaults:
     values:
       layout: "snippet"
       comments: true
+  - scope:
+      path: ""
+      type: "cover"
+    values:
+      layout: "cover"
+
 
