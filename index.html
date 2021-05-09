@@ -4,7 +4,7 @@ title: Сайт о программировании на laravel, jekyll. Ну �
 ---
 <div id="home">
 
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:1 %}
     {% include post-content.html post=post %}
     <div class="hr"></div>
   {% endfor %}
