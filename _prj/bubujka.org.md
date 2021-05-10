@@ -3,6 +3,7 @@ title: Сайт bubujka.org
 name: bubujka.org
 started: 2021-04-24
 backlog:
+  - Выложить тз по ycrm
   - тележечьи каналы всюду разместить
   - youtube 16x16 иконку поставить
   - Логотипы на форум проставить
