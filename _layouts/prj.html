@@ -4,9 +4,21 @@ layout: default
 <div id="post" class='post'>
   <h1>Проект {{ page.name }}</h1>
   {% if page.started %}
-  Дата начала проекта: {{page.started}}
+    Дата начала: {{page.started}}
   {% endif %}
-  <div class='hr'></div>
+  {% if page.playlist %}
+  <h3>
+    Все видео проекта:
+  </h3>
+  <div class="resp-container">
+      <iframe class="resp-iframe"
+              src="https://www.youtube.com/embed/videoseries?list={{page.playlist}}"
+              title="{{page.name}}"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+  </div>
+  {% endif %}
   {{ content }}
   {% include backlog-table.html %}
   <h1>Записи - {{page.name}}</h1>

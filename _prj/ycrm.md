@@ -2,6 +2,7 @@
 title: CRM для психолога
 name: ycrm
 started: 2021-04-17
+playlist: PLofy2gnL-X8-6k5WOJT3qfzv7vDl-U0Jn
 backlog_offstream:
   - Самообновление сайта сделать
   - Шедуллер настроить
@@ -112,4 +113,4 @@ done:
     - Тэги у этапа
     - Тэги у объекта
 ---
-Техническое задание - версия от 2021-04-17 - <img src="/images/ico/page_white_acrobat.png"> <a href="/files/ycrm-tz-2021-04-17.pdf" target='_blank'>скачать</a>
+Техническое задание - версия от 2021-04-17 - <img src="/images/ico/page_white_acrobat.png"> <a href="/files/ycrm-tz-2021-04-17.pdf" target='_blank'>скачать</a><br>
