@@ -4,20 +4,21 @@ layout: default
 <div id="post" class='post'>
   <h1>Проект {{ page.name }}</h1>
   {% if page.started %}
-    Дата начала: {{page.started}}
+    <p>
+      Дата начала: {{page.started}}
+    </p>
   {% endif %}
-  {% if page.playlist %}
-  <h3>
-    Все видео проекта:
-  </h3>
-  <div class="resp-container">
-      <iframe class="resp-iframe"
-              src="https://www.youtube.com/embed/videoseries?list={{page.playlist}}"
-              title="{{page.name}}"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-  </div>
+  {% if page.git %}
+    <p>
+      Репозитории:
+      <ul>
+        {% for g in page.git %}
+          <li>
+            <a href="{{g}}" target='_blank'>{{g}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </p>
   {% endif %}
   {{ content }}
   {% include backlog-table.html %}
@@ -27,4 +28,18 @@ layout: default
       <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
     {% endif %}
   {% endfor %}
+  {% if page.playlist %}
+    <p>
+      Все видео проекта
+      <a href="https://www.youtube.com/playlist?list={{page.playlist}}" target='_blank'><img src="/images/ico/youtube.svg" class='playlist-yt-ico'></a>
+      <div class="resp-container">
+          <iframe class="resp-iframe"
+                  src="https://www.youtube.com/embed/videoseries?list={{page.playlist}}"
+                  title="{{page.name}}"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+      </div>
+    </p>
+  {% endif %}
 </div>

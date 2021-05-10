@@ -1,0 +1,10 @@
+---
+title: Тюнинг моего linux окружения
+name: dotfiles
+started: 2010-01-01
+backlog:
+  - Выяснить начала dotfiles
+  - Обновить blade в vim
+git:
+  - https://github.com/bubujka/dotfiles.org
+---

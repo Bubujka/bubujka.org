@@ -3,22 +3,19 @@ layout: default
 title: Сайт о программировании на laravel, jekyll. Ну и о devops немного.
 ---
 <div id="home">
-
-
   <a name="projects"></a>
   <h1>Проекты, которые я делаю в свободное время</h1>
   <ul>
     {% for p in site.prj %}
       <li>
-        {{p.name}} - <a href="{{ p.url }}">{{ p.title }}</a>
+        <a href="{{ p.url }}">{{p.name}}</a> - {{ p.title | downcase }}
       </li>
     {% endfor %}
   </ul>
 
   <div class="hr"></div>
 
-
-  {% for post in site.posts limit:1 %}
+  {% for post in site.posts limit:2 %}
     {% include post-content.html post=post %}
     <div class="hr"></div>
   {% endfor %}

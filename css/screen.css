@@ -102,3 +102,8 @@ table.backlog-table {
   margin: 8px 0px 10px 0px;
 }
 
+.playlist-yt-ico{
+  width: 40px;
+  position: relative;
+  top: 12px;
+}

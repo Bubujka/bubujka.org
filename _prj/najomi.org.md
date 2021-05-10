@@ -8,4 +8,7 @@ backlog:
   - Реклама что есть комментарии
   - Каноникл добавить
   - Раздел под 8 ларавель
+git:
+  - https://github.com/najomi/najomi.org
+  - https://github.com/najomi/data
 ---
