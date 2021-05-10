@@ -4,6 +4,20 @@ title: Сайт о программировании на laravel, jekyll. Ну �
 ---
 <div id="home">
 
+
+  <a name="projects"></a>
+  <h1>Проекты, которые я делаю в свободное время</h1>
+  <ul>
+    {% for p in site.prj %}
+      <li>
+        {{p.name}} - <a href="{{ p.url }}">{{ p.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="hr"></div>
+
+
   {% for post in site.posts limit:1 %}
     {% include post-content.html post=post %}
     <div class="hr"></div>
@@ -35,18 +49,6 @@ title: Сайт о программировании на laravel, jekyll. Ну �
     {% for s in site.snippet %}
       <li>
         <a href="{{ s.url }}">{{ s.title }}</a><br>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <div class="hr"></div>
-
-  <a name="projects"></a>
-  <h1>Проекты</h1>
-  <ul>
-    {% for p in site.prj %}
-      <li>
-        {{p.name}} - <a href="{{ p.url }}">{{ p.title }}</a>
       </li>
     {% endfor %}
   </ul>
