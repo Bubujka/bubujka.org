@@ -107,3 +107,22 @@ table.backlog-table {
   position: relative;
   top: 12px;
 }
+
+#adfox_161979822363194563{
+  margin-top: 10px;
+}
+
+#adfox_161979822363194563 img{
+  border-radius: 7px;
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse
+}
+table td, table th{
+  padding: 3px 10px;
+}
+.empty{
+  background: rgba(255,0,0,0.1)
+}
