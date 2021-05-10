@@ -1,0 +1,14 @@
+---
+layout: default
+title: Шаблоны для стрима
+---
+
+<a name="tpls"></a>
+<h1>Шаблоны для стрима</h1>
+<ul>
+  {% for p in site.tpl %}
+    <li>
+      {{ p.path }} <a href="{{ p.url }}">{{ p.name }}</a>
+    </li>
+  {% endfor %}
+</ul>

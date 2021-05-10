@@ -126,3 +126,7 @@ table td, table th{
 .empty{
   background: rgba(255,0,0,0.1)
 }
+
+.tpl-src{
+  white-space: pre;
+}

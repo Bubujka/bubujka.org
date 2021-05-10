@@ -9,6 +9,8 @@ plugins:
   - jekyll-sitemap
 
 collections:
+  tpl:
+    output: true
   snippet:
     output: true
   bin:

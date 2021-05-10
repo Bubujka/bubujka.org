@@ -8,9 +8,12 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
 <script>
-const copyToClipboard = function(){
+const copyToClipboard = function(selector){
+    if(!selector){
+        selector = 'code';
+    }
   const el = document.createElement('textarea');
-  el.value = document.querySelector("code").textContent;
+  el.value = document.querySelector(selector).textContent;
   document.body.appendChild(el);
   el.select();
   document.execCommand('copy');
