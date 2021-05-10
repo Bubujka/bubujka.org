@@ -112,3 +112,4 @@ done:
     - Тэги у этапа
     - Тэги у объекта
 ---
+Техническое задание - версия от 2021-04-17 - <img src="/images/ico/page_white_acrobat.png"> <a href="/files/ycrm-tz-2021-04-17.pdf" target='_blank'>скачать</a>
