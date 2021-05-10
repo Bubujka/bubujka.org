@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
+<!--
+<h1>
+  {% capture post_basename %}{{page.path | remove: '_posts/' | remove: '.md' | remove: '.html'}}{% endcapture %}
+</h1>
+
+{% for image in site.static_files %}
+  {% if image.path contains post_basename %}
+    <img src="{{ site.baseurl }}{{ image.path }}" class='post-img'/>
+  {% endif %}
+{% endfor %}
+-->
+
 <div id="post" class='post'>
   {% include post-content.html post=page %}
 </div>
@@ -12,5 +24,4 @@ layout: default
     <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
   {% endfor %}
 </div>
-
 {% include comments.html %}
