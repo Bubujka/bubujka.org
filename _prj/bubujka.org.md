@@ -6,6 +6,7 @@ playlist: PLofy2gnL-X8_iNjGvuyTD3CgJy_pgGCE1
 git:
   - https://github.com/bubujka/bubujka.org
 backlog:
+  - '_tpl файлы сделать'
   - По-человечьи написать сколько проект идёт
   - Скриншоты по проекту добавить на сайт
   - Видео с прогрессом выводить у проекта
