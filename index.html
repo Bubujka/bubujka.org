@@ -57,10 +57,21 @@ title: Сайт о программировании на laravel, jekyll. Ну �
   <a href="https://github.com/bubujka/bu.bin">https://github.com/bubujka/bu.bin</a>
   <pre><code class='language-bash'>git clone git@github.com:bubujka/bu.bin.git</code></pre>
   <ul>
+    <h2>Боль-менее интересное</h2>
     {% for v in site.bin %}
-      <li>
-        {% include bin-link.html obj=v %}
-      </li>
+      {% if v.important %}
+        <li>
+          {% include bin-link.html obj=v %}
+        </li>
+      {% endif %}
+    {% endfor %}
+    <h2>Разный хлам</h2>
+    {% for v in site.bin %}
+      {% unless v.important %}
+        <li>
+          {% include bin-link.html obj=v %}
+        </li>
+      {% endunless %}
     {% endfor %}
   </ul>
 </div>
