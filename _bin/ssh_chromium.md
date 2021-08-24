@@ -12,7 +12,7 @@ title: Запустить хром через socks5 туннель
 k9 google-chrome
 
 chromium-browser  https://ifconfig.io \
-  --proxy-server="socks5://localhost:9999"
+  --proxy-server="socks5://localhost:9998"
   #--proxy-bypass-list="$(cat ~/.db/wiki/noproxy.md)" \
 i3-workspace www
 ```
