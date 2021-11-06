@@ -7,7 +7,7 @@ title: Записать через dmenu в
 {% raw %}
 ```bash
 #!/bin/bash
-. ~/.bashrc
+#. ~/.bashrc
 PTH=$1
 TARGET="$(dmenu-wrapper 'Что?' 0 1)"
 if [ ! -n "$TARGET" ]; then
