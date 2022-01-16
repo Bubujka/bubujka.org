@@ -9,7 +9,7 @@ title: Записать через dmenu в
 #!/bin/bash
 #. ~/.bashrc
 PTH=$1
-TARGET="$(dmenu-wrapper 'Что?' 0 1)"
+TARGET="$(zenity --text 'Что записать?' --entry --width 1000 --height 150)"
 if [ ! -n "$TARGET" ]; then
   echo "Aborted" | dzen2-wrapper red ; exit
 fi
