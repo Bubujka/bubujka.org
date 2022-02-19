@@ -92,10 +92,9 @@ def reps():
                 expanduser("~/.password-store"),
                 expanduser("~/.db"),
                 expanduser("~/.bu.bin"),
-                "-type",
-                "d",
-                "-name",
-                ".git",
+                "-type", "d",
+                "-not", "-path", "*/_files/*",
+                "-name", ".git",
             ]
         )
         .decode("utf-8")
