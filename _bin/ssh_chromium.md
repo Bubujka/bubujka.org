@@ -9,10 +9,10 @@ title: Запустить хром через socks5 туннель
 #!/bin/bash
 . ~/.bashrc
 
-k9 google-chrome
-
+mkdir ~/.config/client-chrome
 google-chrome  https://ifconfig.io \
-  --proxy-server="socks5://localhost:9998"
+  --proxy-server="socks5://localhost:9998" \
+  --user-data-dir=~/.config/client-chrome
   #--proxy-bypass-list="$(cat ~/.db/wiki/noproxy.md)" \
 i3-workspace www
 ```
