@@ -11,7 +11,7 @@ title: Сбилдить Dockerfile и сразу его запустить
 {% raw %}
 ```bash
 #!/bin/bash
-docker build --pull . -f $1 -t test $@
+docker build --pull . -f $1 -t test
 dt
 ```
 {% endraw %}
