@@ -12,6 +12,6 @@ title: Пометить слой у докера алиасом и запуст�
 ```bash
 #!/bin/bash
 docker commit $1 test
-docker run --rm -it test bash
+docker run --rm -it test bash || docker run --rm -it test sh
 ```
 {% endraw %}
